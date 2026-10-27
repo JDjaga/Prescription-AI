@@ -1,0 +1,40 @@
+.markdown-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-family: inherit;
+  word-break: break-word;
+  white-space: pre-line;
+  padding: 0;
+  margin: 0;
+}
+.markdown-body strong {
+  font-weight: bold;
+}
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 1.2em;
+  padding-left: 1.2em;
+}
+.markdown-body p {
+  margin: 0.5em 0;
+}
+
+/* AI Typing Animation */
+@keyframes typing-animation {
+  0%, 80%, 100% {
+    transform: initial;
+  }
+  40% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.ai-typing-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 1px;
+  background-color: #a1a1aa; /* gray-400 */
+  border-radius: 50%;
+  animation: typing-animation 1.5s infinite ease-in-out;
+}

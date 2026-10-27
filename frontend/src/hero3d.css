@@ -1,0 +1,14 @@
+.animate-float-slow {
+  animation: floatY 5s ease-in-out infinite;
+}
+.animate-float-medium {
+  animation: floatY 3.5s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: floatY 2.2s ease-in-out infinite;
+}
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}

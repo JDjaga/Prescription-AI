@@ -1,0 +1,6 @@
+# Ignore local dependencies and sensitive files
+node_modules
+.env
+my-gcp-vision-key.json
+analysisStore.json
+npm-debug.log*
