@@ -12,21 +12,26 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [needsConfirm, setNeedsConfirm] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
     });
     setLoading(false);
     if (error) {
       setError(error.message);
-    } else {
+    } else if (data.session) {
+      // Email confirmation disabled in Supabase -> session returned immediately
       navigate('/chat');
+    } else {
+      // Email confirmation enabled -> user must click the link in their inbox
+      setNeedsConfirm(true);
     }
   };
 
@@ -48,6 +53,22 @@ const Register = () => {
               <p className="text-gray-600 text-center mb-8">Join MedASK AI and take control of your health</p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
+                {needsConfirm ? (
+                  <div className="text-center py-4">
+                    <div className="bg-green-100 border border-green-300 text-green-800 px-4 py-4 rounded-lg mb-4 text-sm">
+                      <p className="font-semibold mb-1">Account created!</p>
+                      <p>
+                        We sent a confirmation link to <strong>{email}</strong>.
+                        <br />
+                        Click the link in that email, then sign in here.
+                      </p>
+                    </div>
+                    <Link to="/login" className="inline-block px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                      Go to Login
+                    </Link>
+                  </div>
+                ) : (
+                  <>
                 {error && (
                   <div className="bg-red-100 border border-red-300 text-red-700 px-4 py-2 rounded-lg mb-2 text-sm text-center">
                     {error}
@@ -128,6 +149,8 @@ const Register = () => {
                     Sign In
                   </Link>
                 </div>
+                  </>
+                )}
               </form>
             </div>
           </div>

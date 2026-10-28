@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Register from './pages/Register';
 import GetStarted from './pages/GetStarted';
 import RequireAuth from "./components/auth/RequireAuth";
+import AuthConfirm from "./pages/AuthConfirm";
 import NotFound from "./pages/NotFound";
 
 import Subscription from "./pages/Subscription";
@@ -47,6 +48,7 @@ const App = () => (
               <Route path="/chat" element={<RequireAuth><Chat /></RequireAuth>} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/auth/confirm" element={<AuthConfirm />} />
               <Route path="/getstarted" element={<GetStarted />} />
               <Route path="/subscription" element={<Subscription />} />
               <Route path="/analysis-result" element={<AnalysisResultPage />} />
