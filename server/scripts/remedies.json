@@ -1,0 +1,1899 @@
+[
+  {
+    "ailment": "nausea",
+    "remedy": "Ginger Root Tea for Nausea",
+    "name": "Ginger Root Tea for Nausea",
+    "ingredients": [
+      "1-2 inches fresh ginger root, sliced thin",
+      "1 cup boiling water",
+      "1 teaspoon honey (optional)"
+    ],
+    "preparation": "Steep fresh ginger slices in freshly boiled water for 10 minutes, covered. Strain into a mug and stir in honey if desired.",
+    "dosage": "1 cup, up to 3 times daily as needed.",
+    "benefits": [
+      "Accelerates gastric emptying",
+      "Suppresses serotonin-mediated nausea pathways",
+      "Soothes stomach cramps"
+    ],
+    "usageInstructions": "Sip slowly at the onset of nausea or approximately 30 minutes before travel or meals.",
+    "potentialRisks": [
+      "Mild heartburn or throat irritation in large doses",
+      "May have mild blood-thinning effects at high amounts"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing efficacy for pregnancy-induced and postoperative nausea.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "nausea",
+      "motion sickness",
+      "indigestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep fresh ginger slices in freshly boiled water for 10 minutes, covered. Strain into a mug and stir in honey if desired."
+  },
+  {
+    "ailment": "indigestion",
+    "remedy": "Peppermint Leaf Infusion for Indigestion",
+    "name": "Peppermint Leaf Infusion for Indigestion",
+    "ingredients": [
+      "1 tablespoon dried peppermint leaves",
+      "1 cup boiling water"
+    ],
+    "preparation": "Pour boiling water over the dried peppermint leaves and steep covered for 7 to 10 minutes. Strain thoroughly before serving.",
+    "dosage": "1 cup sipped slowly after meals, up to 3 times per day.",
+    "benefits": [
+      "Relaxes gastrointestinal smooth muscle",
+      "Eases post-prandial fullness and spasms",
+      "Promotes healthy bile flow"
+    ],
+    "usageInstructions": "Drink warm 15 to 30 minutes after heavy or triggering meals.",
+    "potentialRisks": [
+      "May worsen gastroesophageal reflux (GERD) by relaxing the lower esophageal sphincter",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from clinical studies for antispasmodic effects in functional dyspepsia.",
+    "effectivenessScore": 4,
+    "userRating": 4.4,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "indigestion",
+      "bloating",
+      "heartburn"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over the dried peppermint leaves and steep covered for 7 to 10 minutes. Strain thoroughly before serving."
+  },
+  {
+    "ailment": "bloating",
+    "remedy": "Crushed Fennel Seed Tea for Bloating",
+    "name": "Crushed Fennel Seed Tea for Bloating",
+    "ingredients": [
+      "1 teaspoon whole fennel seeds, lightly crushed",
+      "1 cup boiling water"
+    ],
+    "preparation": "Lightly crush fennel seeds with a mortar and pestle to release volatile oils. Steep in hot water for 10 minutes, then strain.",
+    "dosage": "1 cup as needed following meals, up to 3 times daily.",
+    "benefits": [
+      "Expels trapped intestinal gas",
+      "Reduces abdominal distention",
+      "Relaxes intestinal muscles"
+    ],
+    "usageInstructions": "Drink while warm after meals that cause gas or discomfort.",
+    "potentialRisks": [
+      "Rare allergic reactions in individuals allergic to celery or carrot family",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine as an effective carminative agent.",
+    "effectivenessScore": 3,
+    "userRating": 4.3,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "bloating",
+      "indigestion",
+      "constipation"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Lightly crush fennel seeds with a mortar and pestle to release volatile oils. Steep in hot water for 10 minutes, then strain."
+  },
+  {
+    "ailment": "constipation",
+    "remedy": "Psyllium Husk Drink for Constipation",
+    "name": "Psyllium Husk Drink for Constipation",
+    "ingredients": [
+      "1 tablespoon whole psyllium husk",
+      "8-10 ounces cool water or diluted juice",
+      "1 additional glass of plain water"
+    ],
+    "preparation": "Vigorously stir psyllium husk into the liquid and drink immediately before it gels.",
+    "dosage": "1 serving daily, increasing to twice daily if tolerated.",
+    "benefits": [
+      "Increases fecal bulk and moisture",
+      "Stimulates normal peristaltic motion",
+      "Supports regularity without harsh laxative cramping"
+    ],
+    "usageInstructions": "Consume first thing in the morning or between meals, always followed immediately by a second full glass of water.",
+    "potentialRisks": [
+      "Choking or esophageal obstruction if swallowed without sufficient fluid",
+      "Temporary gas and bloating during initial days of use"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians as a first-line bulk-forming laxative.",
+    "effectivenessScore": 5,
+    "userRating": 4.5,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "constipation",
+      "bloating",
+      "indigestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Vigorously stir psyllium husk into the liquid and drink immediately before it gels."
+  },
+  {
+    "ailment": "heartburn",
+    "remedy": "Slippery Elm Bark Drink for Heartburn",
+    "name": "Slippery Elm Bark Drink for Heartburn",
+    "ingredients": [
+      "1 teaspoon slippery elm inner bark powder",
+      "1 cup warm water or unsweetened almond milk"
+    ],
+    "preparation": "Whisk the slippery elm powder thoroughly into warm liquid until fully dispersed and slightly viscous.",
+    "dosage": "1 cup taken 30 minutes after meals or before bed.",
+    "benefits": [
+      "Coats and protects irritated esophageal tissue",
+      "Forms a soothing mucilaginous barrier",
+      "Calms burning retrosternal discomfort"
+    ],
+    "usageInstructions": "Sip slowly when heartburn symptoms flare up or after trigger meals; take 2 hours apart from oral medications.",
+    "potentialRisks": [
+      "May slow absorption of concurrent oral medications due to mucilage coating",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine with established demulcent properties.",
+    "effectivenessScore": 3,
+    "userRating": 4.2,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "heartburn",
+      "indigestion",
+      "nausea"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Whisk the slippery elm powder thoroughly into warm liquid until fully dispersed and slightly viscous."
+  },
+  {
+    "ailment": "motion sickness",
+    "remedy": "Ginger and Lemon Infusion for Motion Sickness",
+    "name": "Ginger and Lemon Infusion for Motion Sickness",
+    "ingredients": [
+      "1 tablespoon freshly grated ginger root",
+      "1 cup hot water",
+      "1 squeeze fresh lemon juice"
+    ],
+    "preparation": "Simmer fresh ginger in water for 5 minutes, strain, and finish with a squeeze of fresh lemon juice.",
+    "dosage": "1/2 to 1 cup, consumed 30 to 45 minutes prior to departure.",
+    "benefits": [
+      "Dampens vestibular-induced gastric dysrhythmia",
+      "Reduces dizziness and cold sweating",
+      "Settles mild travel-related stomach upset"
+    ],
+    "usageInstructions": "Drink warm or chilled prior to embarking on a car, boat, or flight, taking small sips if symptoms recur en route.",
+    "potentialRisks": [
+      "Mild gastric burning if taken on an empty stomach",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating reduction in motion-induced nausea and tachygastria.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "motion sickness",
+      "nausea",
+      "indigestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer fresh ginger in water for 5 minutes, strain, and finish with a squeeze of fresh lemon juice."
+  },
+  {
+    "ailment": "loss of appetite",
+    "remedy": "Gentian and Orange Peel Bitter Tea",
+    "name": "Gentian and Orange Peel Bitter Tea",
+    "ingredients": [
+      "1/2 teaspoon dried gentian root",
+      "1/2 teaspoon dried bitter orange peel",
+      "1 cup boiling water"
+    ],
+    "preparation": "Steep gentian root and orange peel in boiling water for 8 minutes, then strain thoroughly.",
+    "dosage": "1/4 to 1/2 cup taken 15 to 30 minutes before a meal.",
+    "benefits": [
+      "Stimulates gustatory vagal reflexes",
+      "Enhances saliva and stomach acid secretion",
+      "Promotes natural hunger cues"
+    ],
+    "usageInstructions": "Take a few sips at room temperature shortly before eating to awaken digestive secretions.",
+    "potentialRisks": [
+      "Can aggravate active peptic ulcers or severe acid reflux",
+      "Intensely bitter taste may cause mild gagging in sensitive individuals"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and herbalists to trigger cephalic phase digestion.",
+    "effectivenessScore": 4,
+    "userRating": 4,
+    "category": "Digestive Health",
+    "relatedConditions": [
+      "loss of appetite",
+      "indigestion",
+      "nausea"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep gentian root and orange peel in boiling water for 8 minutes, then strain thoroughly."
+  },
+  {
+    "ailment": "headache",
+    "remedy": "Diluted Peppermint Oil Temple Massage for Headache",
+    "name": "Diluted Peppermint Oil Temple Massage for Headache",
+    "ingredients": [
+      "3 drops 100% pure peppermint essential oil",
+      "1 teaspoon jojoba or sweet almond carrier oil"
+    ],
+    "preparation": "Mix the peppermint essential oil into the carrier oil thoroughly in a small dish or roller bottle.",
+    "dosage": "Apply 2-3 drops of the diluted mixture onto temples and forehead once, repeating after 30 minutes if needed.",
+    "benefits": [
+      "Provides local cooling sensation via menthol",
+      "Promotes cutaneous blood flow modulation",
+      "Reduces perceived pericranial muscle tension"
+    ],
+    "usageInstructions": "Gently massage onto temples, hairline, and back of neck, keeping strictly away from the eyes.",
+    "potentialRisks": [
+      "Skin irritation or contact dermatitis if applied undiluted",
+      "Severe eye irritation if hands touch the eye area"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing efficacy comparable to oral acetaminophen for tension-type headache.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "headache",
+      "migraine",
+      "tension"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Mix the peppermint essential oil into the carrier oil thoroughly in a small dish or roller bottle."
+  },
+  {
+    "ailment": "migraine",
+    "remedy": "Feverfew and Ginger Infusion for Migraine",
+    "name": "Feverfew and Ginger Infusion for Migraine",
+    "ingredients": [
+      "1 teaspoon dried feverfew herb",
+      "1/2 teaspoon freshly grated ginger root",
+      "1 cup boiling water"
+    ],
+    "preparation": "Combine feverfew and ginger in a mug, pour boiling water over them, cover, and steep for 10 minutes before straining.",
+    "dosage": "1 cup at the earliest warning signs of an attack; can repeat once after 4 hours.",
+    "benefits": [
+      "Inhibits serotonin release and platelet aggregation",
+      "Suppresses neurovascular inflammatory cascades",
+      "Mitigates migraine-associated nausea"
+    ],
+    "usageInstructions": "Drink as soon as aura or prodromal symptoms appear, resting quietly in a dark room.",
+    "potentialRisks": [
+      "Contraindicated in pregnancy due to potential uterine contractions",
+      "Can cause minor mouth ulcers or abdominal distress in sensitive users"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine with mixed results in controlled trials.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "migraine",
+      "headache",
+      "nausea"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine feverfew and ginger in a mug, pour boiling water over them, cover, and steep for 10 minutes before straining."
+  },
+  {
+    "ailment": "muscle pain",
+    "remedy": "Epsom Salt and Arnica Compress for Muscle Pain",
+    "name": "Epsom Salt and Arnica Compress for Muscle Pain",
+    "ingredients": [
+      "1/2 cup Epsom salt (magnesium sulfate)",
+      "1 tablespoon topical arnica tincture",
+      "3 cups hot water"
+    ],
+    "preparation": "Dissolve the Epsom salt in hot water, allow to cool slightly to a warm, comfortable temperature, and stir in the arnica tincture.",
+    "dosage": "Apply warm compress for 15-20 minutes, 1-2 times daily.",
+    "benefits": [
+      "Relaxes stiff muscular fibers with localized heat",
+      "Promotes tissue perfusion",
+      "Helps attenuate localized muscular soreness"
+    ],
+    "usageInstructions": "Soak a clean washcloth, wring out excess liquid, and drape directly over the affected muscle group.",
+    "potentialRisks": [
+      "Skin irritation from arnica on broken or damaged skin",
+      "Risk of superficial burns if water temperature is too high"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine and athletic recovery settings.",
+    "effectivenessScore": 3,
+    "userRating": 4.5,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "muscle pain",
+      "back pain",
+      "joint pain"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Dissolve the Epsom salt in hot water, allow to cool slightly to a warm, comfortable temperature, and stir in the arnica tincture."
+  },
+  {
+    "ailment": "joint pain",
+    "remedy": "Turmeric-Curcumin Golden Milk for Joint Pain",
+    "name": "Turmeric-Curcumin Golden Milk for Joint Pain",
+    "ingredients": [
+      "1 teaspoon ground turmeric root",
+      "1 pinch black pepper (piperine source)",
+      "1 cup warm oat milk or whole milk",
+      "1/2 teaspoon coconut oil"
+    ],
+    "preparation": "Simmer ground turmeric, black pepper, and coconut oil in warm milk over low heat for 5 minutes, whisking continually.",
+    "dosage": "1 cup once daily, preferably with an evening meal.",
+    "benefits": [
+      "Downregulates inflammatory cytokines including TNF-alpha and IL-6",
+      "Eases joint stiffness and improves mobility",
+      "Provides sustained systemic antioxidant support"
+    ],
+    "usageInstructions": "Drink warm on a regular daily basis; the black pepper and dietary fat are essential for curcumin absorption.",
+    "potentialRisks": [
+      "Mild gastrointestinal upset at higher doses",
+      "Caution for those with gallstones or taking anticoagulants"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating reduction in joint discomfort comparable to mild NSAIDs.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "joint pain",
+      "muscle pain",
+      "back pain"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer ground turmeric, black pepper, and coconut oil in warm milk over low heat for 5 minutes, whisking continually."
+  },
+  {
+    "ailment": "back pain",
+    "remedy": "Willow Bark Decoction for Back Pain",
+    "name": "Willow Bark Decoction for Back Pain",
+    "ingredients": [
+      "1 tablespoon dried white willow bark chips",
+      "1.5 cups water",
+      "1/2 teaspoon cinnamon chips (optional)"
+    ],
+    "preparation": "Combine willow bark and water in a saucepan, bring to a boil, then gently simmer for 15 minutes. Strain before drinking.",
+    "dosage": "1 cup up to 2 times daily after food.",
+    "benefits": [
+      "Contains salicin, a natural precursor to salicylic acid",
+      "Relieves dull lower back muscular and inflammatory ache",
+      "Inhibits prostaglandin synthesis"
+    ],
+    "usageInstructions": "Consume with a light snack or meal to protect the stomach lining.",
+    "potentialRisks": [
+      "Avoid if allergic to aspirin or taking blood-thinning medications",
+      "Contraindicated in children and adolescents due to Reye's syndrome risk"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating modest pain reduction in chronic low back pain.",
+    "effectivenessScore": 4,
+    "userRating": 4.2,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "back pain",
+      "joint pain",
+      "muscle pain"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine willow bark and water in a saucepan, bring to a boil, then gently simmer for 15 minutes. Strain before drinking."
+  },
+  {
+    "ailment": "menstrual cramps",
+    "remedy": "Ginger and Cinnamon Tea for Menstrual Cramps",
+    "name": "Ginger and Cinnamon Tea for Menstrual Cramps",
+    "ingredients": [
+      "1 teaspoon freshly grated ginger",
+      "1/2 stick Ceylon cinnamon",
+      "1 cup boiling water"
+    ],
+    "preparation": "Simmer ginger and cinnamon stick in boiling water for 10 minutes. Strain into a cup and drink warm.",
+    "dosage": "1 cup, 2 to 3 times daily during the first 2-3 days of menstruation.",
+    "benefits": [
+      "Reduces production of pain-causing uterine prostaglandins",
+      "Relaxes uterine smooth muscle",
+      "Decreases accompanying nausea and pelvic fullness"
+    ],
+    "usageInstructions": "Start drinking 1-2 days prior to expected menses or at the first onset of dysmenorrhea cramping.",
+    "potentialRisks": [
+      "Mild gastric irritation or heartburn if consumed in excess",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing ginger reduces dysmenorrhea pain with efficacy similar to ibuprofen.",
+    "effectivenessScore": 4,
+    "userRating": 4.7,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "menstrual cramps",
+      "bloating",
+      "back pain"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer ginger and cinnamon stick in boiling water for 10 minutes. Strain into a cup and drink warm."
+  },
+  {
+    "ailment": "toothache",
+    "remedy": "Clove Oil Swab for Toothache",
+    "name": "Clove Oil Swab for Toothache",
+    "ingredients": [
+      "2 drops 100% pure clove essential oil",
+      "1/2 teaspoon olive oil or coconut oil"
+    ],
+    "preparation": "Mix the clove oil thoroughly into the carrier oil in a small container to avoid mucosal chemical burns.",
+    "dosage": "Apply a tiny amount via cotton swab to the affected tooth area, up to 3 times daily as a temporary stopgap.",
+    "benefits": [
+      "Eugenol acts as a rapid local anesthetic",
+      "Exerts natural antiseptic properties against oral bacteria",
+      "Numbs throbbing dental discomfort temporarily"
+    ],
+    "usageInstructions": "Dip a cotton swab into the diluted solution, gently dab around the painful tooth without touching gums unnecessarily, and seek dental care.",
+    "potentialRisks": [
+      "Severe gum irritation, mucosal sloughing, or nerve injury if used undiluted",
+      "Not a substitute for urgent professional dental intervention"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and widely used in dental temporary dressings.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Pain & Inflammation",
+    "relatedConditions": [
+      "toothache",
+      "headache",
+      "sinus congestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Mix the clove oil thoroughly into the carrier oil in a small container to avoid mucosal chemical burns."
+  },
+  {
+    "ailment": "cough",
+    "remedy": "Honey and Thyme Syrup for Cough",
+    "name": "Honey and Thyme Syrup for Cough",
+    "ingredients": [
+      "2 tablespoons raw wildflower honey",
+      "1 tablespoon fresh thyme leaves",
+      "1/2 cup hot water"
+    ],
+    "preparation": "Steep thyme in hot water for 10 minutes, strain liquid, and thoroughly blend in the raw honey.",
+    "dosage": "1-2 teaspoons swallowed slowly every 3 to 4 hours as needed.",
+    "benefits": [
+      "Demulcent honey coats and soothes hyperreactive cough receptors",
+      "Thyme essential oils act as mild antispasmodics and bronchodilators",
+      "Reduces nocturnal coughing frequency"
+    ],
+    "usageInstructions": "Swallow slowly to let the mixture coat the pharynx; take particularly right before bedtime.",
+    "potentialRisks": [
+      "Never give honey to infants under 12 months due to infant botulism risk",
+      "High natural sugar content; monitor in diabetes"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and pediatric associations for symptomatic cough relief.",
+    "effectivenessScore": 4,
+    "userRating": 4.7,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "cough",
+      "sore throat",
+      "common cold"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep thyme in hot water for 10 minutes, strain liquid, and thoroughly blend in the raw honey."
+  },
+  {
+    "ailment": "common cold",
+    "remedy": "Elderberry and Zinc Decoction for Common Cold",
+    "name": "Elderberry and Zinc Decoction for Common Cold",
+    "ingredients": [
+      "2 tablespoons dried black elderberries (Sambucus nigra)",
+      "1 cup water",
+      "1 slice fresh ginger"
+    ],
+    "preparation": "Simmer dried elderberries and ginger in water for 15 minutes, mash berries against the pot, and strain thoroughly.",
+    "dosage": "1-2 tablespoons of the concentrated decoction, 3 times daily at symptom onset.",
+    "benefits": [
+      "Inhibits viral hemagglutinin entry into host cells",
+      "Stimulates cytokines to mount an immune response",
+      "May shorten duration of upper respiratory viral symptoms"
+    ],
+    "usageInstructions": "Consume at the earliest sign of cold symptoms such as scratchy throat or general malaise.",
+    "potentialRisks": [
+      "Raw or undercooked elderberries contain cyanogenic glycosides and must be thoroughly boiled",
+      "Mild GI upset in sensitive individuals"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials indicating modest reduction in cold duration and severity.",
+    "effectivenessScore": 3,
+    "userRating": 4.4,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "common cold",
+      "cough",
+      "sinus congestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer dried elderberries and ginger in water for 15 minutes, mash berries against the pot, and strain thoroughly."
+  },
+  {
+    "ailment": "sinus congestion",
+    "remedy": "Eucalyptus Steam Inhalation for Sinus Congestion",
+    "name": "Eucalyptus Steam Inhalation for Sinus Congestion",
+    "ingredients": [
+      "3 drops eucalyptus globulus essential oil",
+      "4 cups steaming hot water"
+    ],
+    "preparation": "Pour steaming water into a heat-safe bowl and add eucalyptus drops immediately before beginning inhalation.",
+    "dosage": "Inhale steam for 5 to 10 minutes, up to twice daily.",
+    "benefits": [
+      "Cineole helps thin thick mucous secretions",
+      "Reduces sinus mucosal vascular engorgement",
+      "Enhances mucociliary clearance in upper nasal passages"
+    ],
+    "usageInstructions": "Lean over the bowl with a towel draped over head like a tent, eyes kept firmly closed, breathing deeply through the nose.",
+    "potentialRisks": [
+      "Risk of thermal burn from boiling water or steam",
+      "Avoid in young children due to risk of laryngospasm from 1,8-cineole"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing 1,8-cineole improves rhinosinusitis symptoms and patency.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "sinus congestion",
+      "common cold",
+      "headache"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour steaming water into a heat-safe bowl and add eucalyptus drops immediately before beginning inhalation."
+  },
+  {
+    "ailment": "sore throat",
+    "remedy": "Warm Salt Water and Sage Gargle for Sore Throat",
+    "name": "Warm Salt Water and Sage Gargle for Sore Throat",
+    "ingredients": [
+      "1/2 teaspoon non-iodized salt",
+      "1 tablespoon dried sage leaves",
+      "1 cup warm boiled water"
+    ],
+    "preparation": "Steep sage leaves in boiling water for 10 minutes, strain, and stir in the salt until completely dissolved.",
+    "dosage": "Gargle with 1/4 cup for 30 seconds, repeating until the cup is empty, 3-4 times daily.",
+    "benefits": [
+      "Hypertonic saline draws fluid out of inflamed, edematous pharyngeal tissues",
+      "Sage polyphenols provide mild astringent and antibacterial effects",
+      "Mechanically washes away mucus, debris, and irritants"
+    ],
+    "usageInstructions": "Gargle deeply in the back of the throat and spit out completely; do not swallow.",
+    "potentialRisks": [
+      "Swallowing high amounts of salt water can cause nausea or hypernatremia",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians as standard supportive therapy for acute pharyngitis.",
+    "effectivenessScore": 5,
+    "userRating": 4.8,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "sore throat",
+      "cough",
+      "common cold"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep sage leaves in boiling water for 10 minutes, strain, and stir in the salt until completely dissolved."
+  },
+  {
+    "ailment": "wheezing",
+    "remedy": "Mullein Leaf Infusion for Mild Wheezing",
+    "name": "Mullein Leaf Infusion for Mild Wheezing",
+    "ingredients": [
+      "1-2 tablespoons dried mullein leaves (Verbascum thapsus)",
+      "1 cup boiling water"
+    ],
+    "preparation": "Steep dried mullein in boiling water for 15 minutes, then strain through a fine coffee filter to catch tiny irritating plant hairs.",
+    "dosage": "1 cup twice daily during mild respiratory tightness.",
+    "benefits": [
+      "Mucilage content coats and calms hypersensitive respiratory epithelium",
+      "Mild saponins facilitate clearance of lower airway mucus",
+      "Soothes bronchial irritations"
+    ],
+    "usageInstructions": "Drink warm between meals; always filter thoroughly through paper or cloth to remove stinging leaf hairs.",
+    "potentialRisks": [
+      "Not a replacement for prescribed rescue bronchodilators in acute asthma attacks",
+      "Inadequately filtered hairs can cause throat tickle and secondary coughing"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine for supportive bronchial comfort.",
+    "effectivenessScore": 2,
+    "userRating": 3.9,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "wheezing",
+      "cough",
+      "chest congestion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep dried mullein in boiling water for 15 minutes, then strain through a fine coffee filter to catch tiny irritating plant hairs."
+  },
+  {
+    "ailment": "chest congestion",
+    "remedy": "Thyme and Mullein Expectorant Tea for Chest Congestion",
+    "name": "Thyme and Mullein Expectorant Tea for Chest Congestion",
+    "ingredients": [
+      "1 teaspoon dried thyme leaves",
+      "1 teaspoon dried mullein leaves",
+      "1 cup boiling water"
+    ],
+    "preparation": "Infuse thyme and mullein in boiling water for 10 minutes, covered, then strain through a coffee filter.",
+    "dosage": "1 cup, 3 times daily while congested.",
+    "benefits": [
+      "Promotes thinning and expectoration of thick bronchial secretions",
+      "Exerts mild bronchodilatory and antispasmodic action",
+      "Cleanses airways of mucus plugs"
+    ],
+    "usageInstructions": "Drink hot while inhaling the steam from the cup, taking deep diaphragmatic breaths.",
+    "potentialRisks": [
+      "Can cause minor gastrointestinal irritation if consumed on an empty stomach",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine and approved by herbal monographs as an expectorant.",
+    "effectivenessScore": 3,
+    "userRating": 4.3,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "chest congestion",
+      "cough",
+      "wheezing"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Infuse thyme and mullein in boiling water for 10 minutes, covered, then strain through a coffee filter."
+  },
+  {
+    "ailment": "seasonal allergies",
+    "remedy": "Stinging Nettle Infusion for Seasonal Allergies",
+    "name": "Stinging Nettle Infusion for Seasonal Allergies",
+    "ingredients": [
+      "2 tablespoons dried stinging nettle leaf (Urtica dioica)",
+      "1 cup boiling water"
+    ],
+    "preparation": "Steep dried nettle leaf in boiling water for 15 minutes, covered, then strain into a mug.",
+    "dosage": "1 cup, 2 times daily throughout high pollen season.",
+    "benefits": [
+      "Blocks histamine receptors and inhibits mast cell degranulation in vitro",
+      "Downregulates prostaglandin formation",
+      "Alleviates allergic rhinitis sneezing and itchy eyes"
+    ],
+    "usageInstructions": "Begin drinking 2 to 4 weeks prior to the onset of allergy season for best preventative benefit.",
+    "potentialRisks": [
+      "Mild diuretic action; ensure adequate fluid intake",
+      "Rare allergic rash in hypersensitive individuals"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine with preliminary randomized trial data.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Respiratory Health",
+    "relatedConditions": [
+      "seasonal allergies",
+      "sinus congestion",
+      "cough"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep dried nettle leaf in boiling water for 15 minutes, covered, then strain into a mug."
+  },
+  {
+    "ailment": "insomnia",
+    "remedy": "Valerian Root and Passionflower Infusion for Insomnia",
+    "name": "Valerian Root and Passionflower Infusion for Insomnia",
+    "ingredients": [
+      "1 teaspoon dried valerian root",
+      "1 teaspoon dried passionflower",
+      "1 cup boiling water"
+    ],
+    "preparation": "Place roots and flowers in a tea infuser, cover with boiling water, and steep tightly covered for 12 to 15 minutes before straining.",
+    "dosage": "1 cup taken 30 to 60 minutes before going to bed.",
+    "benefits": [
+      "Allosterically modulates GABA-A receptors to enhance brain GABA activity",
+      "Shortens sleep latency (time to fall asleep)",
+      "Improves subjective perception of sleep depth"
+    ],
+    "usageInstructions": "Consume warm in a dim, low-stimulation environment prior to planned sleep time.",
+    "potentialRisks": [
+      "Unpleasant earthy odor and bitter taste",
+      "Morning grogginess or vivid dreams in some individuals"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing modest improvements in sleep latency and sleep quality.",
+    "effectivenessScore": 3,
+    "userRating": 4.2,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "insomnia",
+      "poor sleep quality",
+      "restlessness"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Place roots and flowers in a tea infuser, cover with boiling water, and steep tightly covered for 12 to 15 minutes before straining."
+  },
+  {
+    "ailment": "anxiety",
+    "remedy": "Ashwagandha Root Powder Tonic for Anxiety",
+    "name": "Ashwagandha Root Powder Tonic for Anxiety",
+    "ingredients": [
+      "1/2 teaspoon organic KSM-66 or standard ashwagandha root powder (approx. 500 mg)",
+      "1 cup warm almond milk",
+      "1/4 teaspoon ground cardamom"
+    ],
+    "preparation": "Whisk ashwagandha powder and cardamom into warm almond milk over low heat until smoothly combined.",
+    "dosage": "1 cup daily, taken consistently in the morning or evening.",
+    "benefits": [
+      "Attenuates hypothalamic-pituitary-adrenal (HPA) axis hyperreactivity",
+      "Lowers circulating salivary cortisol concentrations",
+      "Reduces chronic apprehension and autonomic tension"
+    ],
+    "usageInstructions": "Consume once daily for a minimum of 4 to 8 weeks to evaluate therapeutic response.",
+    "potentialRisks": [
+      "Avoid in pregnancy or hyperthyroidism due to potential thyroid stimulation",
+      "Mild GI upset or loose stools in sensitive individuals"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating significant reductions in stress and anxiety scores.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "anxiety",
+      "stress",
+      "tension"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Whisk ashwagandha powder and cardamom into warm almond milk over low heat until smoothly combined."
+  },
+  {
+    "ailment": "stress",
+    "remedy": "Holy Basil (Tulsi) Tea for Stress",
+    "name": "Holy Basil (Tulsi) Tea for Stress",
+    "ingredients": [
+      "1 tablespoon dried holy basil leaves (Ocimum sanctum)",
+      "1 cup boiling water",
+      "1/2 teaspoon honey (optional)"
+    ],
+    "preparation": "Pour boiling water over the holy basil leaves, cover with a saucer to retain volatile oils, steep for 10 minutes, and strain.",
+    "dosage": "1 cup, 1-2 times daily during periods of heightened psychological stress.",
+    "benefits": [
+      "Acts as an adaptogen to normalize neuroendocrine stress parameters",
+      "Protects against stress-induced oxidative damage",
+      "Enhances calmness and mental equilibrium without sedation"
+    ],
+    "usageInstructions": "Drink during midday or afternoon work breaks to buffer work-related stress spikes.",
+    "potentialRisks": [
+      "May lower blood sugar; caution if concurrent with hypoglycemic drugs",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing improvements in perceived stress and generalized stress symptoms.",
+    "effectivenessScore": 3,
+    "userRating": 4.4,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "stress",
+      "anxiety",
+      "mental fatigue"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over the holy basil leaves, cover with a saucer to retain volatile oils, steep for 10 minutes, and strain."
+  },
+  {
+    "ailment": "restlessness",
+    "remedy": "Lemon Balm and Chamomile Infusion for Restlessness",
+    "name": "Lemon Balm and Chamomile Infusion for Restlessness",
+    "ingredients": [
+      "1 teaspoon dried lemon balm leaves (Melissa officinalis)",
+      "1 teaspoon dried chamomile flowers",
+      "1 cup boiling water"
+    ],
+    "preparation": "Combine lemon balm and chamomile in a tea strainer, cover with boiling water, and steep for 8 to 10 minutes.",
+    "dosage": "1 cup taken in the late afternoon or evening as needed.",
+    "benefits": [
+      "Inhibits GABA transaminase to prolong endogenous calming neurotransmission",
+      "Settles physical agitation and fidgetiness",
+      "Soothes stress-related digestive flutter"
+    ],
+    "usageInstructions": "Sip slowly when feeling physically agitated, unfocused, or unable to sit still.",
+    "potentialRisks": [
+      "Rare allergy in individuals sensitive to Asteraceae family plants (chamomile)",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials indicating reduction in agitation and laboratory-induced psychological stress.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "restlessness",
+      "anxiety",
+      "insomnia"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine lemon balm and chamomile in a tea strainer, cover with boiling water, and steep for 8 to 10 minutes."
+  },
+  {
+    "ailment": "mental fatigue",
+    "remedy": "Rhodiola Rosea Decoction for Mental Fatigue",
+    "name": "Rhodiola Rosea Decoction for Mental Fatigue",
+    "ingredients": [
+      "1 teaspoon dried Rhodiola rosea root",
+      "1.5 cups water"
+    ],
+    "preparation": "Simmer rhodiola root gently in water for 15 minutes, strain, and allow to cool slightly before drinking.",
+    "dosage": "1 cup in the early morning, avoiding afternoon or evening use.",
+    "benefits": [
+      "Enhances cellular ATP production during cognitive exertion",
+      "Modulates monoaminergic neurotransmission in the prefrontal cortex",
+      "Reduces burnout-induced mental exhaustion"
+    ],
+    "usageInstructions": "Consume upon waking or during high-demand cognitive projects; do not consume late in the day to prevent insomnia.",
+    "potentialRisks": [
+      "Can cause overstimulation, insomnia, or dizziness if dose is excessive",
+      "Contraindicated in bipolar disorder due to risk of triggering mania"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating fatigue reduction during prolonged cognitive stress.",
+    "effectivenessScore": 4,
+    "userRating": 4.3,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "mental fatigue",
+      "stress",
+      "poor sleep quality"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer rhodiola root gently in water for 15 minutes, strain, and allow to cool slightly before drinking."
+  },
+  {
+    "ailment": "tension",
+    "remedy": "Lavender Oil Aromatherapy Compress for Tension",
+    "name": "Lavender Oil Aromatherapy Compress for Tension",
+    "ingredients": [
+      "4 drops true lavender essential oil (Lavandula angustifolia)",
+      "2 cups warm water",
+      "1 small cotton hand towel"
+    ],
+    "preparation": "Add lavender essential oil to warm water and disperse thoroughly with hands. Submerge the towel and wring out excess moisture.",
+    "dosage": "Apply compress over neck, shoulders, or eyes for 15 minutes as needed.",
+    "benefits": [
+      "Linalool and linalyl acetate stimulate parasympathetic tone via olfactory receptors",
+      "Promotes somatic muscle de-escalation in the trapezius and suboccipital regions",
+      "Lowers elevated heart rate and autonomic nervous arousal"
+    ],
+    "usageInstructions": "Lie down in a quiet space and apply the warm, fragrant towel across the back of the neck or over the forehead.",
+    "potentialRisks": [
+      "Direct skin sensitization or contact dermatitis in predisposed individuals",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing measurable autonomic nervous system relaxation and stress reduction.",
+    "effectivenessScore": 4,
+    "userRating": 4.7,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "tension",
+      "headache",
+      "stress"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Add lavender essential oil to warm water and disperse thoroughly with hands. Submerge the towel and wring out excess moisture."
+  },
+  {
+    "ailment": "poor sleep quality",
+    "remedy": "Tart Cherry Juice and Chamomile Blend for Poor Sleep Quality",
+    "name": "Tart Cherry Juice and Chamomile Blend for Poor Sleep Quality",
+    "ingredients": [
+      "1/2 cup 100% Montmorency tart cherry juice concentrate blend",
+      "1/2 cup brewed chamomile tea, cooled"
+    ],
+    "preparation": "Brew a strong cup of chamomile tea, let it cool, and mix equal parts with unsweetened Montmorency tart cherry juice.",
+    "dosage": "8 ounces taken 60 minutes before bedtime nightly.",
+    "benefits": [
+      "Supplies exogenous botanical melatonin and procyanidin B-2",
+      "Inhibits indoleamine 2,3-dioxygenase to improve tryptophan availability",
+      "Increases sleep efficiency and reduces nocturnal awakenings"
+    ],
+    "usageInstructions": "Drink every night 1 hour before sleep for at least two consecutive weeks for cumulative benefits.",
+    "potentialRisks": [
+      "May cause minor laxative effect or acid reflux in sensitive stomachs",
+      "Generally well tolerated when used as directed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing significant increases in sleep time and sleep efficiency.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Sleep & Stress",
+    "relatedConditions": [
+      "poor sleep quality",
+      "insomnia",
+      "restlessness"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Brew a strong cup of chamomile tea, let it cool, and mix equal parts with unsweetened Montmorency tart cherry juice."
+  },
+  {
+    "ailment": "acne",
+    "remedy": "Diluted Tea Tree Oil Spot Application",
+    "name": "Diluted Tea Tree Oil Spot Application",
+    "ingredients": [
+      "2-3 drops 100% pure tea tree oil",
+      "1 teaspoon jojoba oil or mineral oil"
+    ],
+    "preparation": "Thoroughly mix 2-3 drops of tea tree oil into 1 teaspoon of carrier oil in a small glass dish. Stir until evenly distributed.",
+    "dosage": "Apply 1 dab directly to blemishes once or twice daily.",
+    "benefits": [
+      "Reduces acne-causing Cutibacterium acnes bacteria",
+      "Decreases localized skin inflammation",
+      "Helps clear clogged pores"
+    ],
+    "usageInstructions": "Apply using a clean cotton swab directly onto active lesions after gentle cleansing. Do not rinse off.",
+    "potentialRisks": [
+      "Contact dermatitis or skin irritation in sensitive individuals",
+      "Mild localized redness or dryness",
+      "Toxic if ingested"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing efficacy comparable to 5% benzoyl peroxide with fewer side effects.",
+    "effectivenessScore": 4,
+    "userRating": 4.4,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "acne",
+      "folliculitis",
+      "oily skin"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Thoroughly mix 2-3 drops of tea tree oil into 1 teaspoon of carrier oil in a small glass dish. Stir until evenly distributed."
+  },
+  {
+    "ailment": "eczema",
+    "remedy": "Colloidal Oatmeal Bath",
+    "name": "Colloidal Oatmeal Bath",
+    "ingredients": [
+      "1 cup finely ground colloidal oatmeal",
+      "1 tub lukewarm water"
+    ],
+    "preparation": "Finely grind whole oats into a silky powder or use store-bought colloidal oatmeal. Slowly stir the powder into running lukewarm bathwater until the water turns a milky white.",
+    "dosage": "15-minute soak once daily during active flare-ups.",
+    "benefits": [
+      "Relieves pruritus and intense itching",
+      "Restores cutaneous epidermal barrier function",
+      "Calms acute cutaneous inflammation"
+    ],
+    "usageInstructions": "Soak in the lukewarm bath for 10-15 minutes, pat skin gently dry with a soft towel, and immediately apply a thick emollient to seal in moisture.",
+    "potentialRisks": [
+      "Slippery tub surface hazard",
+      "Rare allergic contact dermatitis to oat proteins"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and approved as an OTC skin protectant by the FDA.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "eczema",
+      "atopic dermatitis",
+      "pruritus"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Finely grind whole oats into a silky powder or use store-bought colloidal oatmeal. Slowly stir the powder into running lukewarm bathwater until the water turns a milky white."
+  },
+  {
+    "ailment": "dry skin",
+    "remedy": "Virgin Coconut Oil Occlusive Layer",
+    "name": "Virgin Coconut Oil Occlusive Layer",
+    "ingredients": [
+      "1-2 tablespoons cold-pressed virgin coconut oil"
+    ],
+    "preparation": "Scoop out a small amount of solid coconut oil and rub between warm palms until completely liquefied.",
+    "dosage": "Apply a thin layer twice daily, especially following bathing.",
+    "benefits": [
+      "Prevents transepidermal water loss",
+      "Replenishes intercellular lipid content",
+      "Improves skin surface smoothness"
+    ],
+    "usageInstructions": "Smooth evenly over damp skin immediately after showering to trap moisture. Allow several minutes to absorb before dressing.",
+    "potentialRisks": [
+      "Comedogenic potential on facial skin leading to breakout",
+      "Rare contact allergy"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating improved skin hydration and surface lipid levels comparable to mineral oil.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "dry skin",
+      "xerosis",
+      "ichthyosis"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Scoop out a small amount of solid coconut oil and rub between warm palms until completely liquefied."
+  },
+  {
+    "ailment": "dandruff",
+    "remedy": "Diluted Apple Cider Vinegar Scalp Rinse",
+    "name": "Diluted Apple Cider Vinegar Scalp Rinse",
+    "ingredients": [
+      "2 tablespoons raw, unfiltered apple cider vinegar",
+      "1 cup lukewarm water"
+    ],
+    "preparation": "Combine raw apple cider vinegar and filtered lukewarm water in a squeeze bottle or clean spray bottle and shake well.",
+    "dosage": "Use 2 times per week after regular shampooing.",
+    "benefits": [
+      "Helps balance acidic scalp microenvironment",
+      "Inhibits excess Malassezia yeast proliferation",
+      "Gently dissolves dead skin flaking"
+    ],
+    "usageInstructions": "Pour the mixture over washed hair, massage into the scalp for 3 to 5 minutes, and rinse thoroughly with cool water.",
+    "potentialRisks": [
+      "Scalp stinging or irritation if open scratches are present",
+      "Transient vinegar odor",
+      "Hair dryness if used too frequently"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine based on acid-mantle balancing properties.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "dandruff",
+      "seborrheic dermatitis",
+      "scalp psoriasis"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine raw apple cider vinegar and filtered lukewarm water in a squeeze bottle or clean spray bottle and shake well."
+  },
+  {
+    "ailment": "hair fall",
+    "remedy": "Rosemary Essential Oil Scalp Massage",
+    "name": "Rosemary Essential Oil Scalp Massage",
+    "ingredients": [
+      "4-5 drops pure rosemary essential oil",
+      "1 tablespoon pure jojoba or argan oil"
+    ],
+    "preparation": "Dilute the rosemary essential oil droplets into the carrier oil and blend thoroughly.",
+    "dosage": "Apply once daily or at least 3 times per week.",
+    "benefits": [
+      "Stimulates microcirculation around hair follicles",
+      "May inhibit cellular dihydrotestosterone binding",
+      "Supports scalp health and follicular vitality"
+    ],
+    "usageInstructions": "Part hair in sections, massage the oil blend into the scalp with fingertips for 5 minutes, leave on for at least 30 minutes, then wash out with shampoo.",
+    "potentialRisks": [
+      "Localized scalp irritation or tingling",
+      "Allergic contact dermatitis if undiluted"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating hair regrowth comparable to 2% minoxidil after six months of consistent use.",
+    "effectivenessScore": 3,
+    "userRating": 4.3,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "hair fall",
+      "telogen effluvium",
+      "androgenetic alopecia"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Dilute the rosemary essential oil droplets into the carrier oil and blend thoroughly."
+  },
+  {
+    "ailment": "sunburn",
+    "remedy": "Pure Aloe Vera Gel Compress",
+    "name": "Pure Aloe Vera Gel Compress",
+    "ingredients": [
+      "2 tablespoons 100% pure cold-extracted aloe vera gel",
+      "2-3 drops chamomile floral water (optional)"
+    ],
+    "preparation": "Extract inner clear gel from a fresh aloe vera leaf or use pure commercial gel without added alcohols, chilling it in the refrigerator for 20 minutes.",
+    "dosage": "Apply generously 3 to 4 times daily to burned skin.",
+    "benefits": [
+      "Accelerates epithelial re-epithelialization",
+      "Suppresses inflammatory prostaglandins and bradykinin",
+      "Provides instant dermal cooling relief"
+    ],
+    "usageInstructions": "Smooth gently over sunburned areas without rubbing vigorously. Allow to absorb naturally without washing off.",
+    "potentialRisks": [
+      "Rare allergic contact dermatitis",
+      "Mild stinging on broken or severely blistered skin"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians for superficial first-degree burn soothing.",
+    "effectivenessScore": 4,
+    "userRating": 4.7,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "sunburn",
+      "thermal burn",
+      "erythema"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Extract inner clear gel from a fresh aloe vera leaf or use pure commercial gel without added alcohols, chilling it in the refrigerator for 20 minutes."
+  },
+  {
+    "ailment": "wounds",
+    "remedy": "Medical-Grade Manuka Honey Dressing",
+    "name": "Medical-Grade Manuka Honey Dressing",
+    "ingredients": [
+      "1 teaspoon medical-grade Manuka honey (UMF 10+ / MGO 250+)",
+      "1 sterile non-adherent gauze pad"
+    ],
+    "preparation": "Ensure the minor scrape or wound is cleaned with mild soap and saline. Apply sterile medical honey directly onto a sterile gauze pad.",
+    "dosage": "Apply once daily or change whenever the dressing becomes saturated.",
+    "benefits": [
+      "Maintains optimal moist wound healing environment",
+      "Exerts broad-spectrum osmotic antibacterial action",
+      "Stimulates autolytic debridement"
+    ],
+    "usageInstructions": "Secure the honey-coated sterile pad over the cleaned minor cut or abrasion with medical tape. Keep dry between dressing changes.",
+    "potentialRisks": [
+      "Transient localized stinging sensation",
+      "Allergic reaction in individuals hypersensitive to bee products",
+      "Do not use non-sterile food honey on open broken skin"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and supported by clinical trials for minor wound repair.",
+    "effectivenessScore": 4,
+    "userRating": 4.6,
+    "category": "Skin & Hair",
+    "relatedConditions": [
+      "wounds",
+      "abrasions",
+      "minor cuts"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Ensure the minor scrape or wound is cleaned with mild soap and saline. Apply sterile medical honey directly onto a sterile gauze pad."
+  },
+  {
+    "ailment": "low immunity",
+    "remedy": "Standardized Elderberry Syrup",
+    "name": "Standardized Elderberry Syrup",
+    "ingredients": [
+      "1 cup dried black elderberries (Sambucus nigra)",
+      "3 cups filtered water",
+      "1/2 cup raw unpasteurized honey"
+    ],
+    "preparation": "Simmer elderberries in water for 35 minutes, mash berries, strain the liquid through cheesecloth, and whisk in honey after cooling to room temperature.",
+    "dosage": "1 tablespoon daily for maintenance, up to 3 times daily during early viral onset.",
+    "benefits": [
+      "Enhances innate cytokine response",
+      "Rich in anthocyanin antioxidants",
+      "Blocks viral hemagglutinin glycoproteins"
+    ],
+    "usageInstructions": "Consume directly by mouth at the earliest signs of respiratory infection or daily during cold season.",
+    "potentialRisks": [
+      "Raw or unripe berries contain sambunigrin glycosides causing nausea/vomiting",
+      "Honey is unsafe for infants under 12 months",
+      "May stimulate autoimmune conditions"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing reduction in cold and influenza symptom duration.",
+    "effectivenessScore": 3,
+    "userRating": 4.3,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "low immunity",
+      "common cold",
+      "viral upper respiratory infection"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer elderberries in water for 35 minutes, mash berries, strain the liquid through cheesecloth, and whisk in honey after cooling to room temperature."
+  },
+  {
+    "ailment": "fatigue",
+    "remedy": "Ashwagandha Root Decoction",
+    "name": "Ashwagandha Root Decoction",
+    "ingredients": [
+      "1/2 teaspoon organic Ashwagandha (Withania somnifera) root powder",
+      "1 cup warm almond milk or water",
+      "1 pinch ground cinnamon"
+    ],
+    "preparation": "Simmer ashwagandha powder in warm liquid over low heat for 5 minutes, whisking thoroughly to prevent clumping.",
+    "dosage": "1 cup once daily, preferably in the evening or late afternoon.",
+    "benefits": [
+      "Modulates cortisol levels and HPA axis stress response",
+      "Supports systemic physical stamina",
+      "Promotes restful restorative sleep"
+    ],
+    "usageInstructions": "Drink warm 30-60 minutes before bedtime or during mid-afternoon energy slumps.",
+    "potentialRisks": [
+      "Mild gastrointestinal distress or loose stools",
+      "May alter thyroid hormone levels",
+      "Contraindicated in pregnancy"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials indicating reduction in perceived stress and chronic physical fatigue.",
+    "effectivenessScore": 4,
+    "userRating": 4.4,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "fatigue",
+      "chronic stress",
+      "adrenal exhaustion"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Simmer ashwagandha powder in warm liquid over low heat for 5 minutes, whisking thoroughly to prevent clumping."
+  },
+  {
+    "ailment": "weakness",
+    "remedy": "Panax Ginseng Root Tea",
+    "name": "Panax Ginseng Root Tea",
+    "ingredients": [
+      "2-3 thin slices dried Asian red ginseng root",
+      "1.5 cups boiling water",
+      "1 teaspoon honey"
+    ],
+    "preparation": "Steep dried ginseng slices in boiling water in a covered ceramic mug for 10-15 minutes, then strain.",
+    "dosage": "1 cup taken in the morning after eating.",
+    "benefits": [
+      "Enhances cellular ATP production",
+      "Improves perceived physical stamina",
+      "Improves mitochondrial oxidative efficiency"
+    ],
+    "usageInstructions": "Sip warm early in the day. Cycle usage by taking 2 weeks on followed by 1 week off.",
+    "potentialRisks": [
+      "Insomnia or hyperstimulation if taken late in the day",
+      "May elevate blood pressure in high doses",
+      "Interacts with blood thinners and diabetic medications"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials supporting improvement in physical vitality and post-exertional weakness.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "weakness",
+      "asthenia",
+      "debility"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep dried ginseng slices in boiling water in a covered ceramic mug for 10-15 minutes, then strain."
+  },
+  {
+    "ailment": "brain fog",
+    "remedy": "Bacopa Monnieri & Green Tea Infusion",
+    "name": "Bacopa Monnieri & Green Tea Infusion",
+    "ingredients": [
+      "1 teaspoon dried Bacopa monnieri herb",
+      "1 teaspoon organic green tea leaves",
+      "1 cup hot water (80°C/175°F)"
+    ],
+    "preparation": "Combine bacopa and green tea leaves in an infuser, pour hot water over them, and steep covered for 7 minutes.",
+    "dosage": "1 cup daily, consumed in the morning.",
+    "benefits": [
+      "Enhances cholinergic neurotransmission",
+      "Combats neuronal oxidative stress",
+      "Promotes mental clarity via L-theanine and bacosides"
+    ],
+    "usageInstructions": "Drink alongside a meal containing healthy fats to optimize bacoside bioavailability.",
+    "potentialRisks": [
+      "Nausea or stomach cramps when taken on an empty stomach",
+      "Mild caffeine content sensitivity",
+      "May slow heart rate in individuals with bradycardia"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating enhanced working memory and cognitive speed over 8-12 weeks.",
+    "effectivenessScore": 3,
+    "userRating": 4.2,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "brain fog",
+      "cognitive sluggishness",
+      "mental fatigue"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine bacopa and green tea leaves in an infuser, pour hot water over them, and steep covered for 7 minutes."
+  },
+  {
+    "ailment": "poor concentration",
+    "remedy": "Ginkgo Biloba & Peppermint Infusion",
+    "name": "Ginkgo Biloba & Peppermint Infusion",
+    "ingredients": [
+      "1 tablespoon dried Ginkgo biloba leaf",
+      "1 teaspoon crushed dried peppermint leaves",
+      "1.5 cups boiling water"
+    ],
+    "preparation": "Pour boiling water over the herbs and steep tightly covered for 10 minutes to preserve volatile menthol oils.",
+    "dosage": "1 cup once or twice daily during periods requiring intense focus.",
+    "benefits": [
+      "Increases cerebral microvascular blood flow",
+      "Sharpens acute sustained attention",
+      "Scavenges free radicals in neural tissues"
+    ],
+    "usageInstructions": "Consume 30 minutes before cognitive tasks or study sessions.",
+    "potentialRisks": [
+      "Mild headache or digestive upset",
+      "Increased bleeding risk with anticoagulants or NSAIDs",
+      "Do not consume raw ginkgo seeds (toxic)"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine with mixed results in healthy young populations.",
+    "effectivenessScore": 3,
+    "userRating": 3.9,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "poor concentration",
+      "distractibility",
+      "attention deficits"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over the herbs and steep tightly covered for 10 minutes to preserve volatile menthol oils."
+  },
+  {
+    "ailment": "recovery from illness",
+    "remedy": "Nutritive Bone Broth with Ginger & Garlic",
+    "name": "Nutritive Bone Broth with Ginger & Garlic",
+    "ingredients": [
+      "2 cups simmered organic bone broth",
+      "1 clove crushed raw garlic",
+      "1/2 teaspoon freshly grated ginger"
+    ],
+    "preparation": "Warm bone broth over medium heat, stir in freshly crushed garlic and grated ginger, and let infuse for 3 minutes before drinking.",
+    "dosage": "1-2 warm mugs daily during convalescence.",
+    "benefits": [
+      "Delivers easily absorbable amino acids and collagen",
+      "Provides bioavailable electrolytes for rehydration",
+      "Garlic and ginger provide mild antimicrobial and anti-inflammatory activity"
+    ],
+    "usageInstructions": "Sip slowly while warm between light, easily digestible meals.",
+    "potentialRisks": [
+      "High sodium content if commercially prepared",
+      "Histamine sensitivity in susceptible individuals"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians for electrolyte repletion and gentle nutritional replenishment.",
+    "effectivenessScore": 4,
+    "userRating": 4.7,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "recovery from illness",
+      "convalescence",
+      "post-viral fatigue"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Warm bone broth over medium heat, stir in freshly crushed garlic and grated ginger, and let infuse for 3 minutes before drinking."
+  },
+  {
+    "ailment": "general wellness",
+    "remedy": "Golden Turmeric Milk",
+    "name": "Golden Turmeric Milk",
+    "ingredients": [
+      "1/2 teaspoon ground turmeric root",
+      "1 pinch black pepper (piperine source)",
+      "1 cup warm unsweetened plant or dairy milk",
+      "1/2 teaspoon virgin coconut oil"
+    ],
+    "preparation": "Whisk turmeric, black pepper, and coconut oil into warm milk over low heat for 3-4 minutes until smooth and golden.",
+    "dosage": "1 cup daily, typically in the evening.",
+    "benefits": [
+      "Broad-spectrum systemic anti-inflammatory support",
+      "Neutralizes reactive oxygen species",
+      "Supports healthy digestion and gut barrier integrity"
+    ],
+    "usageInstructions": "Drink warm prior to bed or with an evening meal to enhance curcumin absorption.",
+    "potentialRisks": [
+      "Mild gastric acid reflux in high doses",
+      "Curcumin may interact with blood thinners and gallbladder conditions"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing curcumin reduces inflammatory markers like CRP and TNF-alpha.",
+    "effectivenessScore": 4,
+    "userRating": 4.8,
+    "category": "Immunity & Energy",
+    "relatedConditions": [
+      "general wellness",
+      "vitality",
+      "oxidative stress"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Whisk turmeric, black pepper, and coconut oil into warm milk over low heat for 3-4 minutes until smooth and golden."
+  },
+  {
+    "ailment": "high cholesterol",
+    "remedy": "Psyllium Husk Soluble Fiber Drink",
+    "name": "Psyllium Husk Soluble Fiber Drink",
+    "ingredients": [
+      "1 tablespoon (approx. 7g) psyllium husk powder",
+      "8-10 ounces cool water or fresh citrus juice"
+    ],
+    "preparation": "Vigorously stir psyllium husk powder into a full glass of water and drink immediately before it gels.",
+    "dosage": "Once daily with a meal, gradually increasing to twice daily if tolerated.",
+    "benefits": [
+      "Binds bile acids in intestinal lumen to lower LDL cholesterol",
+      "Supports healthy apolipoprotein B profiles",
+      "Promotes gut motility and microbiome diversity"
+    ],
+    "usageInstructions": "Consume immediately upon mixing and follow with another full 8-ounce glass of pure water.",
+    "potentialRisks": [
+      "Choking hazard if consumed without adequate fluid",
+      "Transient bloating, gas, or altered bowel habits",
+      "May decrease absorption of prescription drugs if taken within 2 hours"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and backed by multiple systematic reviews showing significant LDL-C reduction.",
+    "effectivenessScore": 5,
+    "userRating": 4.6,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "high cholesterol",
+      "hyperlipidemia",
+      "dyslipidemia"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Vigorously stir psyllium husk powder into a full glass of water and drink immediately before it gels."
+  },
+  {
+    "ailment": "high blood sugar",
+    "remedy": "Ceylon Cinnamon Decoction",
+    "name": "Ceylon Cinnamon Decoction",
+    "ingredients": [
+      "1 stick (approx. 2-3g) true Ceylon cinnamon (Cinnamomum verum)",
+      "1.5 cups boiling water"
+    ],
+    "preparation": "Crush the cinnamon stick slightly and simmer in water for 10 minutes, then strain into a mug.",
+    "dosage": "1 cup once or twice daily before carbohydrate-containing meals.",
+    "benefits": [
+      "Improves cellular glucose uptake via insulin receptor phosphorylation",
+      "Attenuates postprandial glucose spikes",
+      "Provides protective polyphenolic antioxidants"
+    ],
+    "usageInstructions": "Drink 15-20 minutes before meals. Ensure Ceylon cinnamon is used to avoid liver-toxic coumarin found in Cassia.",
+    "potentialRisks": [
+      "Hypoglycemia risk when combined with prescription antidiabetic medications",
+      "Mouth sores or allergic stomatitis in sensitive individuals"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing modest reductions in fasting blood glucose and HbA1c.",
+    "effectivenessScore": 3,
+    "userRating": 4.2,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "high blood sugar",
+      "prediabetes",
+      "type 2 diabetes"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Crush the cinnamon stick slightly and simmer in water for 10 minutes, then strain into a mug."
+  },
+  {
+    "ailment": "insulin resistance",
+    "remedy": "Dilute Apple Cider Vinegar Pre-Meal Tonic",
+    "name": "Dilute Apple Cider Vinegar Pre-Meal Tonic",
+    "ingredients": [
+      "1-2 tablespoons raw apple cider vinegar (with the 'mother')",
+      "1 cup room-temperature water"
+    ],
+    "preparation": "Stir the raw vinegar into a full glass of water until fully dispersed.",
+    "dosage": "Once or twice daily, taken 5 to 10 minutes before meals.",
+    "benefits": [
+      "Delays gastric emptying rate",
+      "Improves peripheral tissue insulin sensitivity",
+      "Reduces postprandial glycemic and insulin excursions"
+    ],
+    "usageInstructions": "Sip through a straw immediately before carbohydrate meals to protect dental enamel, then rinse mouth with water.",
+    "potentialRisks": [
+      "Tooth enamel erosion if consumed undiluted",
+      "Esophageal burning or aggravation of peptic ulcers",
+      "Mild nausea in fasting state"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials demonstrating improved insulin sensitivity index during high-carbohydrate meals.",
+    "effectivenessScore": 4,
+    "userRating": 4.4,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "insulin resistance",
+      "metabolic syndrome",
+      "prediabetes"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Stir the raw vinegar into a full glass of water until fully dispersed."
+  },
+  {
+    "ailment": "blood pressure",
+    "remedy": "Hibiscus Sabdariffa Flower Infusion",
+    "name": "Hibiscus Sabdariffa Flower Infusion",
+    "ingredients": [
+      "2 tablespoons dried hibiscus calyces (Hibiscus sabdariffa)",
+      "2 cups boiling water"
+    ],
+    "preparation": "Pour boiling water over dried hibiscus calyces and steep covered for 10 minutes, then strain to yield a tart ruby-red tea.",
+    "dosage": "1 cup twice daily.",
+    "benefits": [
+      "Exerts natural ACE-inhibitory action via anthocyanins",
+      "Promotes mild endothelial nitric oxide vasodilation",
+      "Supports modest natriuresis and diuresis"
+    ],
+    "usageInstructions": "Enjoy either warm or iced throughout the day. Monitor blood pressure routinely.",
+    "potentialRisks": [
+      "Additive hypotensive effect if combined with antihypertensive pharmaceuticals",
+      "Tart acidity can aggravate gastroesophageal reflux",
+      "Potential diuretic-induced electrolyte imbalance if overconsumed"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing systolic blood pressure reductions comparable to mild standard medications.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "blood pressure",
+      "hypertension",
+      "prehypertension"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over dried hibiscus calyces and steep covered for 10 minutes, then strain to yield a tart ruby-red tea."
+  },
+  {
+    "ailment": "sugar cravings",
+    "remedy": "Gymnema Sylvestre Tea",
+    "name": "Gymnema Sylvestre Tea",
+    "ingredients": [
+      "1 teaspoon dried Gymnema sylvestre leaf",
+      "1 cup boiling water"
+    ],
+    "preparation": "Steep gymnema leaves in boiling water for 8 minutes and strain thoroughly.",
+    "dosage": "1 cup taken whenever intense sugar cravings strike, up to twice daily.",
+    "benefits": [
+      "Gymnemic acids temporarily block sweetness receptors on the tongue",
+      "Reduces appetizing appeal of sugar-dense treats",
+      "Moderates intestinal sugar absorption"
+    ],
+    "usageInstructions": "Swish a small sip over the tongue before swallowing right when a craving emerges.",
+    "potentialRisks": [
+      "Alters taste perception temporarily, rendering sweet foods completely bland",
+      "Potential hypoglycemic reaction if combined with diabetic drugs",
+      "Mild GI upset"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine with confirmed gustatory receptor blocking mechanics.",
+    "effectivenessScore": 3,
+    "userRating": 4,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "sugar cravings",
+      "hyperphagia",
+      "compulsive eating"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Steep gymnema leaves in boiling water for 8 minutes and strain thoroughly."
+  },
+  {
+    "ailment": "fluid retention",
+    "remedy": "Dandelion Leaf Infusion",
+    "name": "Dandelion Leaf Infusion",
+    "ingredients": [
+      "2 teaspoons dried dandelion leaf (Taraxacum officinale)",
+      "1 cup boiling water"
+    ],
+    "preparation": "Pour boiling water over dried dandelion leaves, cover, and steep for 10 to 12 minutes before straining.",
+    "dosage": "1 cup up to twice daily, preferably earlier in the day.",
+    "benefits": [
+      "Promotes gentle urinary excretion of excess fluid",
+      "Replenishes potassium typically lost during diuresis",
+      "Reduces peripheral puffiness and swelling"
+    ],
+    "usageInstructions": "Drink between meals during the morning or early afternoon to avoid waking during the night to urinate.",
+    "potentialRisks": [
+      "Frequent urination",
+      "Allergic reaction in people sensitive to the Asteraceae/Compositae family",
+      "Do not use in acute gallbladder obstruction or renal failure"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing significant increase in urinary frequency and volume within five hours.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "fluid retention",
+      "edema",
+      "water retention"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over dried dandelion leaves, cover, and steep for 10 to 12 minutes before straining."
+  },
+  {
+    "ailment": "weight management",
+    "remedy": "Matcha Green Tea Infusion",
+    "name": "Matcha Green Tea Infusion",
+    "ingredients": [
+      "1/2 teaspoon ceremonial grade matcha green tea powder",
+      "2 ounces warm water (70°C/160°F)",
+      "4 ounces hot water"
+    ],
+    "preparation": "Sift matcha powder into a bowl, add 2 oz warm water, and whisk briskly in a W-pattern until frothy, then dilute with remaining hot water.",
+    "dosage": "1 cup consumed 1 to 2 times daily.",
+    "benefits": [
+      "EGCG stimulates sympathetic fat oxidation",
+      "Supports modest metabolic thermogenesis",
+      "Synergistic caffeine and L-theanine provide stable energy"
+    ],
+    "usageInstructions": "Drink in the morning or 30 minutes prior to physical exercise for optimal metabolic activation.",
+    "potentialRisks": [
+      "Caffeine jitteriness or sleep disruption if taken in the evening",
+      "Mild gastric irritation on an empty stomach",
+      "High doses of green tea extracts can stress liver tissue"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials indicating small, statistically significant increases in energy expenditure and fat oxidation.",
+    "effectivenessScore": 3,
+    "userRating": 4.3,
+    "category": "Cholesterol & Blood Sugar",
+    "relatedConditions": [
+      "weight management",
+      "obesity",
+      "sluggish metabolism"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Sift matcha powder into a bowl, add 2 oz warm water, and whisk briskly in a W-pattern until frothy, then dilute with remaining hot water."
+  },
+  {
+    "ailment": "PMS",
+    "remedy": "Chasteberry (Vitex Agnus-Castus) Tea",
+    "name": "Chasteberry (Vitex Agnus-Castus) Tea",
+    "ingredients": [
+      "1 teaspoon crushed Vitex agnus-castus berries",
+      "1 cup boiling water"
+    ],
+    "preparation": "Lightly crush the berries in a mortar, add to boiling water, cover, and gently simmer for 10-15 minutes before straining.",
+    "dosage": "1 cup daily, taken consistently every morning for at least 3 menstrual cycles.",
+    "benefits": [
+      "Modulates pituitary dopamine receptors to normalize prolactin",
+      "Balances luteal phase progesterone-to-estrogen ratio",
+      "Alleviates premenstrual mood swings and irritability"
+    ],
+    "usageInstructions": "Consume first thing in the morning upon waking throughout the entire menstrual cycle.",
+    "potentialRisks": [
+      "Mild headache or nausea during early days of use",
+      "May interfere with hormonal birth control or fertility treatments",
+      "Contraindicated during pregnancy"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and validated by numerous double-blind clinical trials.",
+    "effectivenessScore": 4,
+    "userRating": 4.5,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "PMS",
+      "premenstrual dysphoric disorder",
+      "hormonal imbalance"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Lightly crush the berries in a mortar, add to boiling water, cover, and gently simmer for 10-15 minutes before straining."
+  },
+  {
+    "ailment": "menopause symptoms",
+    "remedy": "Black Cohosh Root Decoction",
+    "name": "Black Cohosh Root Decoction",
+    "ingredients": [
+      "1/2 teaspoon dried cut black cohosh root (Actaea racemosa)",
+      "1.5 cups cold water"
+    ],
+    "preparation": "Combine root and water in a small saucepan, bring to a gentle boil, cover, and simmer over low heat for 15 minutes, then strain.",
+    "dosage": "1 cup twice daily.",
+    "benefits": [
+      "Reduces frequency and severity of hot flashes",
+      "Improves neurovegetative menopausal sleep disruptions",
+      "Supports serotonin pathway thermoregulation"
+    ],
+    "usageInstructions": "Drink consistently for 4 to 8 weeks to observe full clinical benefits.",
+    "potentialRisks": [
+      "Rare cases of idiosyncratic liver toxicity reported with long-term use",
+      "Occasional mild stomach discomfort or headache",
+      "Avoid in patients with hormone-sensitive cancer history without physician guidance"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing significant symptom relief for vasomotor symptoms like hot flashes.",
+    "effectivenessScore": 3,
+    "userRating": 4.1,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "menopause symptoms",
+      "perimenopause",
+      "hot flashes"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Combine root and water in a small saucepan, bring to a gentle boil, cover, and simmer over low heat for 15 minutes, then strain."
+  },
+  {
+    "ailment": "morning sickness",
+    "remedy": "Fresh Ginger Root Infusion",
+    "name": "Fresh Ginger Root Infusion",
+    "ingredients": [
+      "1 tablespoon freshly sliced ginger root",
+      "1.5 cups boiling water",
+      "1 slice fresh lemon"
+    ],
+    "preparation": "Place thinly sliced fresh ginger into boiling water, remove from heat, cover tightly, and steep for 10 minutes before straining.",
+    "dosage": "Sip 1/4 to 1/2 cup at a time throughout the day, up to 3 cups total.",
+    "benefits": [
+      "Gingerols modulate gastric cholinergic and serotonergic receptors",
+      "Accelerates gastric emptying to quell nausea",
+      "Calms acute pregnancy-related emetic reflex"
+    ],
+    "usageInstructions": "Keep by the bedside and sip small quantities slowly before rising in the morning.",
+    "potentialRisks": [
+      "Mild heartburn or acid reflux if made too concentrated",
+      "Mild blood thinning properties at very high dosages (keep under 2g dried equivalent daily)"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians and recommended by ACOG as a first-line non-pharmacological treatment.",
+    "effectivenessScore": 5,
+    "userRating": 4.7,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "morning sickness",
+      "hyperemesis gravidarum",
+      "pregnancy-related nausea"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Place thinly sliced fresh ginger into boiling water, remove from heat, cover tightly, and steep for 10 minutes before straining."
+  },
+  {
+    "ailment": "urinary tract infection",
+    "remedy": "Concentrated Unsweetened Cranberry Drink",
+    "name": "Concentrated Unsweetened Cranberry Drink",
+    "ingredients": [
+      "1/2 cup pure unsweetened cranberry juice concentrate (Vaccinium macrocarpon)",
+      "1.5 cups filtered water"
+    ],
+    "preparation": "Dilute 1/2 cup of pure, 100% unsweetened cranberry juice concentrate into 1.5 cups of cold water and stir well.",
+    "dosage": "Drink twice daily for prevention and early mild urinary irritation.",
+    "benefits": [
+      "A-type proanthocyanidins (PACs) prevent uropathogenic E. coli fimbrial adhesion",
+      "Promotes regular bladder flushing",
+      "Acidifies urine slightly to deter bacterial colonization"
+    ],
+    "usageInstructions": "Drink promptly upon rising and in the afternoon alongside abundant plain water. Seek antibiotics immediately if fever or back pain occurs.",
+    "potentialRisks": [
+      "High oxalic acid content can contribute to kidney stone formation in prone individuals",
+      "Stomach upset or acid discomfort due to strong tartness",
+      "Does not cure active, established systemic kidney or bladder infections"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians for prevention and reducing recurrence risk of UTIs.",
+    "effectivenessScore": 4,
+    "userRating": 4.3,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "urinary tract infection",
+      "cystitis",
+      "dysuria"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Dilute 1/2 cup of pure, 100% unsweetened cranberry juice concentrate into 1.5 cups of cold water and stir well."
+  },
+  {
+    "ailment": "heavy periods",
+    "remedy": "Shepherd's Purse Infusion",
+    "name": "Shepherd's Purse Infusion",
+    "ingredients": [
+      "2 teaspoons dried Shepherd's Purse herb (Capsella bursa-pastoris)",
+      "1 cup boiling water"
+    ],
+    "preparation": "Pour boiling water over the dried herb, cover closely, and allow to steep for 15 minutes before straining.",
+    "dosage": "1 cup 2 to 3 times daily, taken strictly during the days of heaviest menstrual flow.",
+    "benefits": [
+      "Exerts mild uterine styptic and hemostatic effects",
+      "Helps tone smooth muscular tissue in the myometrium",
+      "Reduces excessive menstrual blood loss volume"
+    ],
+    "usageInstructions": "Start consuming on the first day of heavy menses and discontinue once flow moderates.",
+    "potentialRisks": [
+      "Contraindicated during pregnancy due to potential uterine stimulation",
+      "May interact with blood pressure medications or thyroid therapies",
+      "Underlying cause of menorrhagia must always be evaluated medically"
+    ],
+    "scientificEvidence": "Limited clinical evidence; widely used in traditional medicine and recognized by the European Medicines Agency for menorrhagia.",
+    "effectivenessScore": 3,
+    "userRating": 4,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "heavy periods",
+      "menorrhagia",
+      "uterine cramping"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Pour boiling water over the dried herb, cover closely, and allow to steep for 15 minutes before straining."
+  },
+  {
+    "ailment": "iron deficiency",
+    "remedy": "Blackstrap Molasses & Vitamin C Elixir",
+    "name": "Blackstrap Molasses & Vitamin C Elixir",
+    "ingredients": [
+      "1 tablespoon unsulfured blackstrap molasses",
+      "1 cup warm water",
+      "1 tablespoon freshly squeezed lemon juice (vitamin C catalyst)"
+    ],
+    "preparation": "Dissolve the blackstrap molasses thoroughly into warm water, then stir in fresh lemon juice.",
+    "dosage": "1 serving daily on an empty stomach.",
+    "benefits": [
+      "Supplies dense non-heme iron and essential trace minerals",
+      "Vitamin C markedly increases enteric iron absorption",
+      "Replenishes depleted ferritin and red blood cell precursors"
+    ],
+    "usageInstructions": "Drink through a straw to protect tooth enamel from staining, and avoid consuming with dairy or calcium-rich meals.",
+    "potentialRisks": [
+      "Can cause loose stools or mild intestinal cramping",
+      "Contains concentrated natural sugars; use caution in diabetes",
+      "Mild dental staining if not rinsed promptly"
+    ],
+    "scientificEvidence": "Well-established mechanism, commonly recommended by clinicians as an adjunct dietary source of bioavailable trace minerals.",
+    "effectivenessScore": 4,
+    "userRating": 4.4,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "iron deficiency",
+      "anemia",
+      "ferritin deficiency"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Dissolve the blackstrap molasses thoroughly into warm water, then stir in fresh lemon juice."
+  },
+  {
+    "ailment": "breast tenderness",
+    "remedy": "Cold-Pressed Evening Primrose Oil",
+    "name": "Cold-Pressed Evening Primrose Oil",
+    "ingredients": [
+      "1000 mg to 1500 mg standardized evening primrose oil (Oenothera biennis)",
+      "1 glass water"
+    ],
+    "preparation": "Measure standard cold-pressed evening primrose oil capsules guaranteeing at least 9% gamma-linolenic acid (GLA).",
+    "dosage": "1000 mg twice daily with meals throughout the luteal phase or month-long.",
+    "benefits": [
+      "Provides gamma-linolenic acid (GLA) to synthesize anti-inflammatory PGE1",
+      "Reduces breast tissue sensitivity to fluctuating prolactin",
+      "Relieves cyclical mastalgia and breast swelling"
+    ],
+    "usageInstructions": "Swallow capsules with a meal containing dietary fats. Consistent use over 2-3 months is necessary to assess full therapeutic response.",
+    "potentialRisks": [
+      "Occasional mild headache or soft stools",
+      "May increase bleeding tendency in those taking antiplatelet drugs",
+      "Lowered seizure threshold reported in patients with epilepsy"
+    ],
+    "scientificEvidence": "Moderate evidence from randomized trials showing meaningful reduction in cyclic breast pain severity over three months.",
+    "effectivenessScore": 3,
+    "userRating": 4.2,
+    "category": "Women’s Health",
+    "relatedConditions": [
+      "breast tenderness",
+      "cyclical mastalgia",
+      "fibrocystic breast changes"
+    ],
+    "sources": [],
+    "imageUrl": "",
+    "source": "Measure standard cold-pressed evening primrose oil capsules guaranteeing at least 9% gamma-linolenic acid (GLA)."
+  }
+]

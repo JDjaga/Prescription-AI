@@ -2,8 +2,10 @@
 // TOP-LEVEL ERROR HANDLERS
 // ==================================================================
 process.on('unhandledRejection', (reason, promise) => {
-  console.error('CRITICAL_CRASH: Unhandled Rejection at:', promise, 'reason:', reason);
-  process.exit(1);
+  // Log but DO NOT crash: transient errors (e.g. brief MongoDB connectivity
+  // blips) surface as unhandled rejections, and the driver reconnects on its
+  // own. A production server must ride these out instead of exiting.
+  console.error('UNHANDLED_REJECTION (server kept alive):', reason);
 });
 process.on('uncaughtException', (err, origin) => {
   console.error(`CRITICAL_CRASH: Uncaught Exception: ${err}\n` + `Exception origin: ${origin}`);
@@ -20,11 +22,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const multer = require('multer');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-const vision = require('@google-cloud/vision');
+const ai = require('./ai');
 
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+// Overridable via env; defaults to the current recommended Flash model.
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
 // --- CORS CONFIGURATION ---
 // By default (no ALLOWED_ORIGIN set) all origins are allowed.
@@ -67,20 +71,43 @@ if (missingVars.length > 0) {
 // ==================================================================
 async function startServer() {
   try {
-    // 1. CONNECT TO DATABASE FIRST
+    // 1. CONNECT TO DATABASE FIRST (with retries — Atlas connectivity can be flaky)
     console.log('LOG: Attempting to connect to MongoDB...');
-    mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/medaskai', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log('✅ MongoDB connection established successfully.');
-    })
-    .catch(err => {
-      console.error('❌ FATAL ERROR: Could not connect to MongoDB.');
-      console.error(err);
-      process.exit(1); // Exit the process with an error code
-    });
+    const MONGO_OPTS = { serverSelectionTimeoutMS: 15000, connectTimeoutMS: 15000 };
+    const connectWithRetry = async (attempt = 1) => {
+      try {
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/medaskai', MONGO_OPTS);
+        console.log('✅ MongoDB connection established successfully.');
+      } catch (err) {
+        if (attempt >= 5) {
+          // Do NOT exit — the background retry loop below keeps trying, and the
+          // server stays up serving whatever doesn't need the database.
+          console.error(`⚠️ MongoDB still unreachable after ${attempt} attempts — will keep retrying in the background.`);
+          console.error(`   Common cause: this IP is not in the Atlas Network Access list (${err.message.split('\n')[0]})`);
+          return;
+        }
+        const delay = Math.min(1000 * 2 ** attempt, 15000);
+        console.warn(`⚠️ MongoDB connect failed (attempt ${attempt}/5): ${err.message}. Retrying in ${delay}ms...`);
+        await new Promise(r => setTimeout(r, delay));
+        return connectWithRetry(attempt + 1);
+      }
+    };
+    connectWithRetry();
+
+    // Ride out transient disconnects — the driver auto-reconnects.
+    mongoose.connection.on('disconnected', () => console.warn('⚠️ MongoDB disconnected — driver will auto-reconnect...'));
+    mongoose.connection.on('reconnected', () => console.log('✅ MongoDB reconnected.'));
+
+    // Background reconnect loop: if the initial connect (or a later drop)
+    // persists, keep retrying forever instead of exiting. The server stays up
+    // and serves whatever it can; /api/health reports the DB state.
+    setInterval(() => {
+      if (mongoose.connection.readyState !== 1) {
+        mongoose.connect(process.env.MONGODB_URI, { serverSelectionTimeoutMS: 15000 })
+          .then(() => console.log('✅ MongoDB reconnected via background loop.'))
+          .catch(err => console.warn(`⚠️ Background MongoDB retry failed: ${err.message.split('\n')[0]}`));
+      }
+    }, 30000);
 
     // 2. INITIALIZE SERVICES (AFTER DB)
     console.log('LOG: Initializing Google Gemini AI client...');
@@ -142,26 +169,18 @@ async function startServer() {
 
         let prescriptionText;
         try {
-          console.log('[VISION] Initializing Vision client...');
-          const visionClient = new vision.ImageAnnotatorClient();
-          console.log('[VISION] Vision client initialized. Performing text detection...');
-          const { buffer } = req.file;
-          const [visionResult] = await visionClient.textDetection(buffer);
-          console.log('[VISION] Text detection complete.');
-          const detections = visionResult.textAnnotations;
-          if (detections && detections.length > 0) {
-            prescriptionText = detections[0].description;
-            console.log('[VISION] Text extracted successfully.');
-          } else {
-            prescriptionText = '';
-            console.log('[VISION] No text found in image.');
-          }
-        } catch (visionError) {
-          console.error('[VISION API ERROR] Failed during Vision API processing:', visionError);
-          return res.status(500).json({ 
-            success: false, 
-            message: 'Google Vision API failed. Please check service account permissions and ensure the API is enabled.', 
-            error: visionError.message 
+          console.log('[OCR] Extracting prescription text via multimodal AI...');
+          const ocrPrompt = 'Extract ALL text from this prescription image verbatim (medicine names, dosages, frequencies, doctor and patient details). Return ONLY the extracted text with no commentary. If there is no readable prescription text, return exactly: NO_TEXT_FOUND';
+          const ocrResult = await ai.generateFromImage(req.file.buffer, req.file.mimetype, ocrPrompt, { timeoutMs: 30000 });
+          const ocrText = ocrResult.text;
+          prescriptionText = ocrText === 'NO_TEXT_FOUND' ? '' : ocrText;
+          console.log(`[OCR] Text extracted successfully via ${ocrResult.provider}.`);
+        } catch (ocrError) {
+          console.error('[OCR ERROR] Gemini multimodal extraction failed:', ocrError);
+          return res.status(500).json({
+            success: false,
+            message: 'Text extraction from the image failed. Please try a clearer image.',
+            error: ocrError.message
           });
         }
 
@@ -201,22 +220,11 @@ async function startServer() {
     ---
     `;
         
-        let aiResult, aiResponse, codeBlockMatch, jsonString, analysis;
+        let aiResponse, codeBlockMatch, jsonString, analysis;
         try {
-          const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-          aiResult = await model.generateContent(analysisPrompt);
-          const response = aiResult.response;
-
-          console.log('[UPLOAD] Full Gemini Response:', JSON.stringify(response, null, 2));
-
-          if (!response || typeof response.text !== 'function') {
-            const blockReason = response?.promptFeedback?.blockReason || 'Invalid response structure';
-            console.error('[UPLOAD] Gemini AI content blocked or invalid. Reason:', blockReason);
-            return res.status(500).json({ success: false, message: 'AI content generation failed or was blocked.', reason: blockReason });
-          }
-          
-          aiResponse = response.text();
-          console.log('[UPLOAD] Gemini AI raw response:', aiResponse.substring(0, 400));
+          const aiGen = await ai.generateText(analysisPrompt, { timeoutMs: 30000 });
+          aiResponse = aiGen.text;
+          console.log(`[UPLOAD] AI (${aiGen.provider}) raw response:`, aiResponse.substring(0, 400));
           
           codeBlockMatch = aiResponse.match(/```(?:json)?([\s\S]*?)```/i);
           jsonString = codeBlockMatch ? codeBlockMatch[1].trim() : aiResponse.trim();
@@ -224,8 +232,8 @@ async function startServer() {
           analysis.fileName = req.file.originalname;
           analysis.uploadDate = new Date().toISOString();
         } catch (err) {
-          console.error('[UPLOAD] Gemini AI or JSON parsing failed:', err);
-          return res.status(500).json({ success: false, message: 'AI response is not valid JSON or Gemini failed', error: err.message });
+          console.error('[UPLOAD] AI analysis or JSON parsing failed:', err);
+          return res.status(500).json({ success: false, message: 'AI response is not valid JSON or the AI service failed', error: err.message });
         }
 
         const analysisId = `analysis_${Date.now()}`;

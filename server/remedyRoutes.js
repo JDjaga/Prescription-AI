@@ -1,5 +1,9 @@
 const express = require('express');
 const Remedy = require('./models/Remedy');
+const ai = require('./ai');
+
+// Overridable via env; defaults to the current recommended Flash model.
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
 // Dependency Injection: Export a function that takes the initialized genAI client.
 module.exports = function(genAI) {
@@ -20,27 +24,16 @@ module.exports = function(genAI) {
       console.log(`[RemedySearch] Searching for conditions: ${JSON.stringify(conditions)}`);
       
       let remedies = [];
-      
-      try {
-        // Strategy 1: Multi-field text search with compound queries
-        const searchQueries = conditions.map(condition => ({
-          text: {
-            query: condition,
-            path: ['ailment', 'remedy', 'ingredients', 'preparation'],
-            fuzzy: {
-              maxEdits: 1,
-              prefixLength: 2
-            }
-          }
-        }));
 
-        // Strategy 2: Wildcard search for partial matches
+      // Atlas Search (primary) — the "default" index covers the schema fields
+      // plus the legacy fields (ailment/remedy/ingredients/preparation).
+      try {
+        const SEARCH_PATHS = ['ailment', 'remedy', 'ingredients', 'preparation', 'name', 'category', 'description', 'relatedConditions'];
+        const searchQueries = conditions.map(condition => ({
+          text: { query: condition, path: SEARCH_PATHS, fuzzy: { maxEdits: 1, prefixLength: 2 } }
+        }));
         const wildcardQueries = conditions.map(condition => ({
-          wildcard: {
-            query: `*${condition}*`,
-            path: ['ailment', 'remedy', 'ingredients', 'preparation'],
-            allowAnalyzedField: true
-          }
+          wildcard: { query: `*${condition}*`, path: ['ailment', 'remedy', 'ingredients', 'preparation', 'name'], allowAnalyzedField: true }
         }));
 
         remedies = await Remedy.aggregate([
@@ -49,100 +42,59 @@ module.exports = function(genAI) {
               index: 'default',
               compound: {
                 should: [
-                  // Primary text search with higher boost
-                  ...searchQueries.map(query => ({
-                    ...query,
-                    score: { boost: { value: 3.0 } }
-                  })),
-                  // Wildcard search with lower boost for partial matches
-                  ...wildcardQueries.map(query => ({
-                    ...query,
-                    score: { boost: { value: 1.5 } }
-                  })),
-                  // Exact phrase search in ailment field (highest priority)
-                  {
-                    phrase: {
-                      query: conditions.join(' '),
-                      path: 'ailment',
-                      score: { boost: { value: 5.0 } }
-                    }
-                  }
+                  ...searchQueries,
+                  ...wildcardQueries,
+                  { phrase: { query: conditions.join(' '), path: 'ailment' } }
                 ],
                 minimumShouldMatch: 1
               }
             }
           },
-          {
-            $addFields: {
-              searchScore: { $meta: 'searchScore' }
-            }
-          },
-          {
-            $sort: { 
-              searchScore: -1 
-            }
-          },
-          {
-            $limit: 15 // Increased limit for better results
-          },
+          { $addFields: { searchScore: { $meta: 'searchScore' } } },
+          { $sort: { searchScore: -1 } },
+          { $limit: 15 },
           {
             $project: {
-              _id: 1,
-              ailment: 1,
-              name: '$remedy', // Map remedy field to name for consistency
-              remedy: 1, // Keep original field too
-              ingredients: 1,
-              preparation: 1,
-              dosage: 1,
-              source: 1,
-              // Add these fields if they exist in your schema
-              category: 1,
-              description: 1,
-              benefits: 1,
-              usageInstructions: 1,
-              potentialRisks: 1,
-              scientificEvidence: 1,
-              effectivenessScore: 1,
-              userRating: 1,
-              imageUrl: 1,
-              relatedConditions: 1,
-              sources: 1,
-              searchScore: 1
+              _id: 1, ailment: 1, name: '$remedy', remedy: 1, ingredients: 1,
+              preparation: 1, dosage: 1, source: 1, category: 1, description: 1,
+              benefits: 1, usageInstructions: 1, potentialRisks: 1,
+              scientificEvidence: 1, effectivenessScore: 1, userRating: 1,
+              imageUrl: 1, relatedConditions: 1, sources: 1, searchScore: 1
             }
           }
         ]);
-
-        console.log(`[RemedySearch] Atlas Search returned ${remedies.length} remedies`);
-        console.log(`[RemedySearch] Top 3 results with scores:`, 
-          remedies.slice(0, 3).map(r => ({
-            remedy: r.remedy || r.name,
-            ailment: r.ailment,
-            score: r.searchScore
-          }))
-        );
-
+        console.log(`[RemedySearch] Atlas Search returned ${remedies.length} remedies${remedies.length === 0 ? ' -> falling back to native text/regex search' : ''}`);
       } catch (dbError) {
-        console.error('[RemedySearch] Error during Atlas Search:', dbError);
-        
-        // Fallback to basic MongoDB text search if Atlas Search fails
+        console.error('[RemedySearch] Atlas Search error (falling back):', dbError.message);
+        remedies = [];
+      }
+
+      // Fallback (native Mongo text + regex). Runs when Atlas errors OR returns
+      // empty — Atlas Search can silently match nothing if the index doesn't
+      // cover these fields, so an empty Atlas result is treated as a miss too.
+      if (remedies.length === 0) {
         try {
-          console.log('[RemedySearch] Attempting fallback search...');
           const searchRegex = new RegExp(conditions.join('|'), 'i');
           remedies = await Remedy.find({
             $or: [
               { ailment: searchRegex },
               { remedy: searchRegex },
               { ingredients: { $in: [searchRegex] } },
-              { preparation: searchRegex }
+              { preparation: searchRegex },
+              { name: searchRegex },
+              { category: searchRegex },
+              { description: searchRegex },
+              { relatedConditions: { $in: [searchRegex] } }
             ]
-          }).limit(10).lean();
-          
+          }).limit(6).lean();
+          // Normalise name so the AI step always has a label
+          remedies = remedies.map(r => ({ ...r, name: r.name || r.remedy }));
           console.log(`[RemedySearch] Fallback search returned ${remedies.length} remedies`);
         } catch (fallbackError) {
           console.error('[RemedySearch] Fallback search also failed:', fallbackError);
-          return res.status(500).json({ 
-            success: false, 
-            message: 'Search service temporarily unavailable. Please try again later.' 
+          return res.status(500).json({
+            success: false,
+            message: 'Search service temporarily unavailable. Please try again later.'
           });
         }
       }
@@ -173,10 +125,21 @@ module.exports = function(genAI) {
         });
       }
 
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+      const model = genAI ? genAI.getGenerativeModel({ model: GEMINI_MODEL }) : null;
       const processedRemedies = [];
 
-      for (const remedy of remedies) {
+      // Bounded AI call: never let a single slow generation hang the request.
+      const withTimeout = (promise, ms, label) => Promise.race([
+        promise,
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms)
+        )
+      ]);
+
+      const MAX_AI_REMEDIES = 3; // Only enrich the top N remedies with AI to stay fast.
+      const toEnrich = remedies.slice(0, MAX_AI_REMEDIES);
+
+      const enrichmentResults = await Promise.all(toEnrich.map(async (remedy) => {
         try {
           const remedyName = remedy.name || remedy.remedy;
           const ailment = remedy.ailment;
@@ -206,8 +169,8 @@ Please generate a comprehensive but concise JSON response. Focus on accuracy and
   "scientificEvidence": "Brief summary of scientific support or traditional use"
 }`;
 
-          const result = await model.generateContent(detailPrompt);
-          const aiResponseText = result.response.text();
+          const aiGen = await withTimeout(ai.generateText(detailPrompt, { timeoutMs: 20000 }), 25000, `Remedy AI (${remedyName})`);
+          const aiResponseText = aiGen.text;
           
           // Clean and parse AI response
           const cleanedJson = aiResponseText
@@ -230,7 +193,7 @@ Please generate a comprehensive but concise JSON response. Focus on accuracy and
             };
           }
 
-          processedRemedies.push({
+          return {
             ...remedy,
             name: remedyName,
             ...aiDetails,
@@ -241,15 +204,16 @@ Please generate a comprehensive but concise JSON response. Focus on accuracy and
               preparation: remedy.preparation,
               dosage: remedy.dosage,
               source: remedy.source
-            }
-          });
+            },
+            aiEnhanced: true
+          };
 
         } catch (err) {
           console.error(`AI processing failed for remedy "${remedy.name || remedy.remedy}":`, err);
           
           // Fallback processing without AI
           const remedyName = remedy.name || remedy.remedy;
-          processedRemedies.push({
+          return {
             ...remedy,
             name: remedyName,
             description: remedy.preparation || `Natural remedy for ${remedy.ailment}`,
@@ -263,10 +227,25 @@ Please generate a comprehensive but concise JSON response. Focus on accuracy and
               preparation: remedy.preparation,
               dosage: remedy.dosage,
               source: remedy.source
-            }
-          });
+            },
+            aiEnhanced: false
+          };
         }
-      }
+      }));
+
+      // AI-enriched remedies first, then the remaining search results as-is.
+      const enriched = enrichmentResults.filter(Boolean);
+      const remainder = remedies.slice(MAX_AI_REMEDIES).map((remedy) => ({
+        ...remedy,
+        name: remedy.name || remedy.remedy,
+        description: remedy.preparation || `Natural remedy for ${remedy.ailment}`,
+        benefits: remedy.ingredients ? [`Contains: ${remedy.ingredients.join(', ')}`] : [],
+        usageInstructions: `${remedy.preparation || 'Prepare as directed'}. ${remedy.dosage || 'Use as needed'}`,
+        potentialRisks: ['Consult healthcare provider before use'],
+        scientificEvidence: remedy.source || 'Traditional remedy',
+        aiEnhanced: false
+      }));
+      processedRemedies.push(...enriched, ...remainder);
 
       // 3. Generate overall summary
       let generalSummary = `Found ${processedRemedies.length} potential natural remedies for ${conditions.join(', ')}.`;
@@ -283,8 +262,8 @@ Write a brief, professional 2-3 sentence summary that:
 
 Keep it helpful but appropriately cautious.`;
 
-          const summaryResult = await model.generateContent(overallSummaryPrompt);
-          generalSummary = summaryResult.response.text().trim();
+          const summaryGen = await withTimeout(ai.generateText(overallSummaryPrompt, { timeoutMs: 20000 }), 25000, 'Overall summary AI');
+          generalSummary = summaryGen.text;
         } catch (err) {
           console.error('Error generating AI summary:', err);
           generalSummary = `Found ${processedRemedies.length} traditional remedies for ${conditions.join(', ')}. Please consult with a healthcare provider before trying any new remedies.`;
@@ -319,14 +298,9 @@ Keep it helpful but appropriately cautious.`;
       if (!message) {
         return res.status(400).json({ success: false, message: 'Message is required' });
       }
-      if (!genAI) {
-        return res.status(500).json({ success: false, message: 'AI service unavailable' });
-      }
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-      const result = await model.generateContent(message);
-      const response = await result.response;
-      const text = response.text();
-      res.json({ success: true, reply: text });
+      const chatSystem = 'You are MedASK AI, a helpful assistant for medications, prescriptions and natural remedies. Be concise. For anything beyond general information, advise consulting a healthcare professional.';
+      const aiGen = await ai.generateText(`${chatSystem}\n\nUser message: ${message}`, { timeoutMs: 25000 });
+      res.json({ success: true, reply: aiGen.text });
     } catch (error) {
       console.error('Error in /chat:', error);
       res.status(500).json({ success: false, message: error.message });

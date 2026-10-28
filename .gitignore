@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-package-lock.json
 bun.lockb
 
 # Environment files
@@ -13,10 +12,17 @@ server/.env
 server/.env.local
 server/uploads/.env
 
-# Vision API keys
+# Secret key files (never commit these)
 server/vision-key.json
 server/my-gcp-vision-key.json
-server/*.json
+server/vision-key*.json
+vision-key.json
+
+# Runtime artifacts
+server/analysisStore.json
+server/backend.log
+server/backend.err.log
+server/upload_result.json
 
 # Build outputs
 frontend/dist/
