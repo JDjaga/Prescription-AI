@@ -1,0 +1,54 @@
+# =============================================================================
+# MedASK AI — one-command deployment (VPS or any Docker host)
+#
+#   1. Put backend secrets in  server/.env    (see server/.env.example)
+#   2. Put frontend build vars in .env        (see .env.example)
+#   3. Run:  docker compose up -d --build
+#
+# App:        http://<your-domain-or-ip>:8080
+# Health:     http://<your-domain-or-ip>:8080/api/health
+#
+# The nginx container proxies /api to the backend container, so the whole
+# stack runs same-origin — no CORS issues, and one port exposed publicly.
+# =============================================================================
+services:
+  server:
+    build: ./server
+    env_file:
+      - server/.env
+    environment:
+      - PORT=5001
+    restart: unless-stopped
+    # Not exposed publicly — only reachable through the frontend's nginx proxy.
+    # Uncomment for local debugging on the VPS itself:
+    # ports:
+    #   - "127.0.0.1:5001:5001"
+    # Optional: Google Vision key on a VPS (Cloud Run uses its own service account)
+    # volumes:
+    #   - ./vision-key.json:/usr/src/app/vision-key.json:ro
+    # environment adds:
+    #   - GOOGLE_APPLICATION_CREDENTIALS=/usr/src/app/vision-key.json
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:5001/api/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # These are baked into the JS bundle at BUILD time. They are interpolated
+        # from the root .env file (docker compose reads it automatically).
+        VITE_SUPABASE_URL: ${VITE_SUPABASE_URL}
+        VITE_SUPABASE_ANON_KEY: ${VITE_SUPABASE_ANON_KEY}
+        # Empty → the bundled app calls the API via relative /api paths,
+        # which nginx (default.conf) proxies to the "server" container.
+        VITE_API_BASE_URL: ""
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      server:
+        condition: service_healthy

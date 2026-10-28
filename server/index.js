@@ -27,7 +27,21 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // --- CORS CONFIGURATION ---
-app.use(cors()); // WARNING: Allow all origins for debugging purposes.
+// By default (no ALLOWED_ORIGIN set) all origins are allowed.
+// In production, set ALLOWED_ORIGIN to a comma-separated whitelist, e.g.
+// ALLOWED_ORIGIN=https://medask.example.com,https://www.medask.example.com
+app.use(cors({
+  origin: process.env.ALLOWED_ORIGIN ? process.env.ALLOWED_ORIGIN.split(',').map((o) => o.trim()) : true,
+}));
+
+// --- HEALTH CHECK (for uptime monitoring / load balancers) ---
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+  });
+});
 
 // --- BODY PARSER MIDDLEWARE (MUST BE BEFORE ROUTES) ---
 app.use(express.json());

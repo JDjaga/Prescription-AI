@@ -1,6 +1,9 @@
-# 🧠 PrescriptionAI — Intelligent Medical Document Analysis Platform
+# 🧠 MedASK AI (PrescriptionAI) — Intelligent Medical Document Analysis Platform
+
+[![CI](https://github.com/JDjaga/Prescription-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/JDjaga/Prescription-AI/actions/workflows/ci.yml)
 
 **PrescriptionAI** is a full-stack, AI-powered health platform that helps users understand prescriptions, discover natural remedies, and track their health using cutting-edge technologies like **MongoDB Atlas**, **Google Gemini AI**, and **Google Vision API**.
+
 
 ---
 
@@ -78,7 +81,53 @@ Before running this project, you need accounts and API keys from:
 
 ---
 
-## � Quick Start
+## 🚀 Deployment & Maintenance
+
+The app is self-hosted and running in Docker on a VPS (or Google Cloud Run — both are supported).
+
+### One-command deploy (VPS / any Docker host)
+
+```bash
+# 1. Configure secrets
+cp server/.env.example server/.env       # backend secrets (MongoDB, Gemini, Supabase)
+cp .env.example .env                     # frontend build vars (Supabase keys)
+
+# 2. Build & start both services
+docker compose up -d --build
+
+# 3. Verify
+curl http://localhost:8080/api/health    # → {"status":"ok",...}
+```
+
+What `docker compose` gives you:
+- **`frontend`** — nginx container on port `8080` serving the built React app, proxying `/api` to the backend (same-origin, no CORS issues)
+- **`server`** — Node/Express API with a `/api/health` endpoint and a built-in healthcheck
+- Both containers restart automatically (`restart: unless-stopped`)
+
+### Day-to-day maintenance
+
+| Task | Command |
+|---|---|
+| Deploy an update | `git pull && docker compose up -d --build` |
+| View live logs | `docker compose logs -f` |
+| Restart stack | `docker compose restart` |
+| Check status | `docker compose ps` / `curl http://<host>:8080/api/health` |
+
+Uptime is monitored externally (e.g. UptimeRobot hitting `/api/health`), so failures are noticed within minutes, not days.
+
+### Google Cloud Run alternative
+
+Both Dockerfiles are Cloud Run-ready (nginx listens on `8080`, the server reads `PORT` from the environment). Build each image and deploy with `gcloud run deploy`. The Vision API uses Application Default Credentials, so it authenticates to the built-in Cloud Run service account with zero configuration.
+
+### CI
+
+Every push runs [GitHub Actions](.github/workflows/ci.yml): the frontend is built, and the backend is syntax-checked plus smoke-tested against the `/api/health` endpoint.
+
+---
+
+
+
+## 🧑‍💻 Quick Start (development)
 
 ### 1. Clone the Repository
 
@@ -141,7 +190,11 @@ npm run dev
 
 ### 4. Access the Application
 
-Open your browser and navigate to `http://localhost:5173`
+Open your browser and navigate to `http://localhost:8080`
+
+> **Alternative:** you can also run the frontend from the repo root with `npm install && npm run dev` (a root-level Vite config points at `frontend/`). Both approaches use the same source.
+>
+> **Note:** if port `8080` is taken (e.g. by Docker Desktop), Vite automatically uses `8081` — check the terminal output.
 
 ---
 
@@ -149,21 +202,26 @@ Open your browser and navigate to `http://localhost:5173`
 
 ```
 Prescription-AI/
-├── frontend/                 # React frontend
+├── frontend/                 # React frontend (self-contained build)
 │   ├── src/
-│   │   ├── components/      # React components
-│   │   ├── pages/           # Page components
-│   │   ├── lib/             # Utility functions
-│   │   └── main.tsx         # Entry point
-│   ├── public/              # Static assets
+│   │   ├── components/       # React components
+│   │   ├── pages/            # Page components
+│   │   ├── lib/              # Utility functions
+│   │   └── main.tsx          # Entry point
+│   ├── public/               # Static assets (favicon, robots.txt)
+│   ├── Dockerfile            # Multi-stage build → nginx
+│   ├── default.conf          # nginx config (SPA + /api proxy)
 │   ├── package.json
-│   └── vite.config.ts
-├── server/                  # Node.js backend
-│   ├── index.js             # Main server file
-│   ├── remedyRoutes.js      # Remedy API routes
-│   ├── journalRoutes.js     # Journal API routes
+│   └── vite.config.js
+├── server/                   # Node.js backend
+│   ├── index.js              # Main server + /api/health
+│   ├── remedyRoutes.js       # Remedy API routes
+│   ├── journalRoutes.js      # Journal API routes
+│   ├── Dockerfile
 │   ├── package.json
-│   └── .env.example         # Environment variables template
+│   └── .env.example          # Environment variables template
+├── docker-compose.yml        # One-command full-stack deployment
+├── .github/workflows/ci.yml  # CI: build frontend, verify server
 ├── .gitignore
 ├── LICENSE
 └── README.md
